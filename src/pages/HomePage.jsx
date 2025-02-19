@@ -6,6 +6,8 @@ import { LangContext } from "@/contexts/LangContext";
 
 import SingerCard from "@/components/SingerCard";
 import { Link } from "react-router-dom";
+import PhotoGrid from "@/components/PhotoGrid";
+import ScrollingImages from "@/components/ScrollingImages";
 
 const HomePage = () => {
   const { lang } = useContext(LangContext);
@@ -34,8 +36,8 @@ const HomePage = () => {
         <p>{text.p4}</p>
       </div>
       {/* Members */}
-      <div className=" bg-primary p-4 w-full text-center">
-        <h2 className="font-bold text-3xl mb-6">
+      <div className=" bg-white p-4 w-full text-center pb-10">
+        <h2 className="font-bold text-3xl mb-6 text-primary">
           {lang === "en" ? "Our Members" : "Nos Artistes"}
         </h2>
         <div className="flex gap-4 justify-around">
@@ -52,24 +54,51 @@ const HomePage = () => {
         </div>
       </div>
       {/* Concepts */}
-      {/* Concepts */}
-      <div className="bg-background h-[200px] flex w-full p-4">
-        <div className="h-full flex-[1_1_33.33%] flex flex-col items-center justify-center gap-5 text-white border-r-2">
-          <h2 className="text-3xl font-bold">Formules</h2>
-          <Link to={"/options"} className=" border-2 p-2">
+      <div className="bg-background h-[500px] flex w-full p-4">
+        <div className="h-full flex-[1_1_33.33%] flex flex-col items-center justify-center gap-10 text-white border-r-2">
+          <h2 className="text-6xl font-bold">Formules</h2>
+          <Link to={"/options"} className="border-2 p-2 text-3xl">
             {lang === "en" ? "Our Formules" : "Nos Formules"}
           </Link>
         </div>
-        <div className=" text-white h-full flex-[2_1_66.67%] flex items-center justify-center overflow-y-scroll">
-          {new Array(20).fill(null).map((_, i) => {
-            return (
-              <div className="w-[200px]">
-                <img src="/assets/logo.png" />
-              </div>
-            );
-          })}
+        <div className="text-white h-full flex-[2_1_66.67%] flex items-center overflow-x-auto whitespace-nowrap no-scrollbar">
+          {new Array(20).fill(null).map((_, i) => (
+            <div key={i} className="w-[200px] flex-shrink-0 mx-2">
+              <img src="/assets/logo.png" className="w-full" />
+            </div>
+          ))}
         </div>
       </div>
+      {/* Videos */}
+      <div className="flex w-full p-4 bg-primary">
+        <ReactPlayer
+          url={"https://youtu.be/aXtZP_-frJ4"}
+          height={500}
+          width={"70%"}
+        />
+        <div className="bg-primary w-[30%] flex flex-col gap-6 justify-center items-center text-white">
+          <h2 className="text-6xl font-bold">Videos</h2>
+          <Link to={"/videos"} className="border-2 p-2 text-3xl">
+            Videos
+          </Link>
+        </div>
+      </div>
+      {/* Photos */}
+      <PhotoGrid />
+      {/* Options */}
+      <div className="bg-background w-full p-4">
+        <h2 className="text-6xl text-center font-bold text-white mb-6">
+          Options
+        </h2>
+        <div className="text-white h-full flex items-center overflow-x-auto whitespace-nowrap no-scrollbar">
+          {new Array(20).fill(null).map((_, i) => (
+            <div key={i} className="w-[200px] flex-shrink-0 mx-2">
+              <img src="/assets/logo.png" className="w-full" />
+            </div>
+          ))}
+        </div>
+      </div>
+      <ScrollingImages />
     </div>
   );
 };

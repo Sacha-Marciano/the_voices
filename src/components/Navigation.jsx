@@ -7,8 +7,6 @@ const Navigation = () => {
   const { lang } = useContext(LangContext);
   const location = useLocation(); // Get current location
 
-  console.log(location);
-
   return (
     <div className="flex gap-4 p-4">
       {navLinks.map((item) => (

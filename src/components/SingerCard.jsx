@@ -2,8 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const SingerCard = ({ name, imageSrc, role }) => {
-  console.log(imageSrc);
-
   return (
     <Link
       to={"/voices"}
