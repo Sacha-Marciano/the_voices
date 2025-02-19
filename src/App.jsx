@@ -15,6 +15,7 @@ import PicturesPage from "./pages/PicturesPage";
 import OptionsPage from "./pages/OptionsPage";
 import VideosPage from "./pages/VideosPage";
 import ContactsPage from "./pages/ContactsPage";
+import Footer from "./components/Footer";
 
 function App() {
   // Context suscribe
@@ -30,6 +31,7 @@ function App() {
         <Route path="/videos" element={<VideosPage />} />
         <Route path="/contacts" element={<ContactsPage />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
