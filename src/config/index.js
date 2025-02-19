@@ -67,3 +67,26 @@ export const homeDescription = {
     p4: "Une chose est sûre : tout sera scrupuleusement étudié pour le jour J, vous ne pensiez à rien d'autre qu'à vous amuser et à profiter pleinement à ce moment magique.",
   },
 };
+
+export const singersDescriptions = [
+  {
+    name: "Eric Stamm",
+    role: { en: "Singer", fr: "Chanteur" },
+    imageSrc: "assets/singers/eric.jpg",
+  },
+  {
+    name: "Douce",
+    role: { en: "Singer", fr: "Chanteuse" },
+    imageSrc: "assets/singers/douce.jpg",
+  },
+  {
+    name: "Sandra",
+    role: { en: "Singer", fr: "Chanteuse" },
+    imageSrc: "assets/singers/sandra.jpg",
+  },
+  {
+    name: "Harold",
+    role: { en: "Singer", fr: "Chanteur" },
+    imageSrc: "assets/singers/harold.jpg",
+  },
+];
