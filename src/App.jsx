@@ -19,7 +19,7 @@ import ContactsPage from "./pages/ContactsPage";
 function App() {
   // Context suscribe
   return (
-    <>
+    <div className="min-h-[100vh] bg-background">
       <Header />
       <Routes>
         <Route path="" element={<HomePage />} />
@@ -30,7 +30,7 @@ function App() {
         <Route path="/videos" element={<VideosPage />} />
         <Route path="/contacts" element={<ContactsPage />} />
       </Routes>
-    </>
+    </div>
   );
 }
 
