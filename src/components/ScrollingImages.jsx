@@ -8,7 +8,7 @@ const ScrollingImages = () => {
         {[...Array(2)].map((_, index) => (
           <div key={index} className="flex">
             {new Array(20).fill(null).map((_, i) => (
-              <div key={i} className="w-[200px] flex-shrink-0 mx-2">
+              <div key={i} className="w-[100px] flex-shrink-0 ">
                 <img src="/assets/logo.png" className="w-full" />
               </div>
             ))}
