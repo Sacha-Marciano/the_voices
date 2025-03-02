@@ -1,5 +1,8 @@
 import React, { useContext, useState } from "react";
 
+// TODO
+// MAKE SURE THE SITE DONT CRASH WHEN CLICKING MINUS ON THE FIRST IMAGE
+
 import img1 from "../assets/1.jpg";
 import img2 from "../assets/2.jpg";
 import img3 from "../assets/3.jpg";
