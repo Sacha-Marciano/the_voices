@@ -1,13 +1,14 @@
 import React, { useContext, useEffect, useState } from "react";
 import ReactPlayer from "react-player";
 
-import { homeDescription, singersDescriptions } from "../config";
+import { concepts, homeDescription, singersDescriptions } from "../config";
 import { LangContext } from "@/contexts/LangContext";
 
 import SingerCard from "@/components/SingerCard";
 import { Link } from "react-router-dom";
 import PhotoGrid from "@/components/PhotoGrid";
 import ScrollingImages from "@/components/ScrollingImages";
+import Concept from "@/components/Concept";
 
 const HomePage = () => {
   const { lang } = useContext(LangContext);
@@ -61,12 +62,18 @@ const HomePage = () => {
             {lang === "en" ? "Our Formules" : "Nos Formules"}
           </Link>
         </div>
-        <div className="text-white h-full flex-[2_1_66.67%] flex items-center overflow-x-auto whitespace-nowrap no-scrollbar">
-          {new Array(20).fill(null).map((_, i) => (
-            <div key={i} className="w-[200px] flex-shrink-0 mx-2">
-              <img src="/assets/logo.png" className="w-full" />
-            </div>
-          ))}
+        <div className="text-white h-full flex-[2_1_66.67%] flex items-center overflow-x-scroll whitespace-nowrap no-scrollbar">
+          {concepts.map((item, index) => {
+            return (
+              <Concept
+                key={index}
+                isCard={true}
+                name={item.name}
+                imgSrc={item.imgSrc}
+                info={item.info}
+              />
+            );
+          })}
         </div>
       </div>
       {/* Videos */}
@@ -90,13 +97,6 @@ const HomePage = () => {
         <h2 className="text-6xl text-center font-bold text-white mb-6">
           Options
         </h2>
-        <div className="text-white h-full flex items-center overflow-x-auto whitespace-nowrap no-scrollbar">
-          {new Array(20).fill(null).map((_, i) => (
-            <div key={i} className="w-[200px] flex-shrink-0 mx-2">
-              <img src="/assets/logo.png" className="w-full" />
-            </div>
-          ))}
-        </div>
       </div>
       <ScrollingImages />
     </div>

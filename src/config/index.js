@@ -403,3 +403,466 @@ export const options = [
     },
   },
 ];
+
+export const concepts = [
+  {
+    name: {
+      en: "DJ Formule",
+      fr: "Formule DJ",
+    },
+    imgSrc: "assets/concepts/1.jpg",
+    info: [
+      {
+        en: {
+          title: "The essentials",
+          description: ["Stephane + 1 Dj"],
+        },
+        fr: {
+          title: "L’essentiel",
+          description: ["Stephane + 1 Dj"],
+        },
+      },
+      {
+        en: {
+          title: "The Technical Part",
+          description: ["1 sound engineer", "1 lights engineer"],
+        },
+        fr: {
+          title: "La technique",
+          description: ["1 ingénieur du son", "1 ingénieur des lumières"],
+        },
+      },
+      {
+        en: {
+          title: "3 options",
+          description: [""],
+        },
+        fr: {
+          title: "3 options au choix",
+          description: [
+            "2 danseuses internationales ou",
+            "1 Musicien (Saxophoniste, Clavier, Violoniste) ou",
+            "1 chanteur/chanteuse",
+          ],
+        },
+      },
+    ],
+  },
+  {
+    name: {
+      en: "DJ Live Formule",
+      fr: "Formule DJ Live",
+    },
+    imgSrc: "assets/concepts/2.jpg",
+    info: [
+      {
+        en: {
+          title: "The essentials",
+          description: ["Stephane + 1 Dj"],
+        },
+        fr: {
+          title: "L’essentiel",
+          description: ["Stephane + 1 Dj"],
+        },
+      },
+      {
+        en: {
+          title: "The Technical Part",
+          description: ["1 sound engineer", "1 lights engineer"],
+        },
+        fr: {
+          title: "La technique",
+          description: ["1 ingénieur du son", "1 ingénieur des lumières"],
+        },
+      },
+      {
+        en: {
+          title: "Singers (Choose 2)",
+          description: [
+            "1 international variety singer",
+            "1 international variety singer",
+          ],
+        },
+        fr: {
+          title: "Les chanteurs (2 au choix)",
+          description: [
+            "1 chanteur variétés internationales",
+            "1 chanteuse variétés internationale",
+          ],
+        },
+      },
+      {
+        en: {
+          title: "Musicians",
+          description: ["1 Saxophonist", "1 other artist"],
+        },
+        fr: {
+          title: "Les musiciens",
+          description: ["1 Saxophoniste +", "1 artiste au choix"],
+        },
+      },
+      {
+        en: {
+          title: "Artists (Choose 1)",
+          description: [
+            "1 percussionnist or",
+            "1 guitarist or",
+            "1 pianist or",
+            "1 violonist or",
+            "2 dancers",
+          ],
+        },
+        fr: {
+          title: "Les artistes (1 au choix)",
+          description: [
+            "1 percussionniste ou",
+            "1 guitariste ou",
+            "1 clavier ou",
+            "1 violoniste ou",
+            "2 danseuses",
+          ],
+        },
+      },
+    ],
+  },
+  {
+    name: {
+      en: "DJ Live + Formule",
+      fr: "Formule DJ Live +",
+    },
+    imgSrc: "assets/concepts/3.jpg",
+    info: [
+      {
+        en: {
+          title: "The essentials",
+          description: ["Stephane + 1 Dj"],
+        },
+        fr: {
+          title: "L’essentiel",
+          description: ["Stephane + 1 Dj"],
+        },
+      },
+      {
+        en: {
+          title: "The Technical Part",
+          description: [
+            "1 sound engineer",
+            "1 lights engineer",
+            "1 sound technician",
+          ],
+        },
+        fr: {
+          title: "La technique",
+          description: [
+            "1 ingénieur du son",
+            "1 ingénieur des lumières",
+            "1 technicien du son",
+          ],
+        },
+      },
+      {
+        en: {
+          title: "Singers",
+          description: [
+            "1 R&B / Soul / Funk singer",
+            "1 international variety singer",
+            "1 international variety singer",
+          ],
+        },
+        fr: {
+          title: "Les chanteurs",
+          description: [
+            "1 chanteur R&B / Soul / Funk",
+            "1 chanteur variétés internationales",
+            "1 chanteuse variétés internationale",
+          ],
+        },
+      },
+      {
+        en: {
+          title: "Musicians",
+          description: [
+            "1 percussionnist (Stephane)",
+            "1 saxophonist",
+            "1 guitarist",
+            "1 drummer",
+            "1 pianist",
+          ],
+        },
+        fr: {
+          title: "Les musiciens",
+          description: [
+            "1 percussionniste (Stephane) ",
+            "1 saxophoniste ",
+            "1 guitariste ",
+            "1 batteur ",
+            "1 clavier",
+          ],
+        },
+      },
+      {
+        en: {
+          title: "Decorations",
+          description: ["1 LED wall"],
+        },
+        fr: {
+          title: "Le Decor",
+          description: ["1 mur de LED"],
+        },
+      },
+    ],
+  },
+  {
+    name: {
+      en: "Ibiza Formule",
+      fr: "Formule Ibiza",
+    },
+    imgSrc: "assets/concepts/4.jpg",
+    info: [
+      {
+        en: {
+          title: "The essentials",
+          description: ["Stephane + 1 Dj"],
+        },
+        fr: {
+          title: "L’essentiel",
+          description: ["Stephane + 1 Dj"],
+        },
+      },
+      {
+        en: {
+          title: "The Technical Part",
+          description: [
+            "1 sound engineer",
+            "1 lights engineer",
+            "1 sound technician",
+          ],
+        },
+        fr: {
+          title: "La technique",
+          description: [
+            "1 ingénieur du son",
+            "1 ingénieur des lumières",
+            "1 technicien du son",
+          ],
+        },
+      },
+      {
+        en: {
+          title: "Singers",
+          description: [
+            "1 R&B / Soul / Funk singer",
+            "1 international variety singer",
+          ],
+        },
+        fr: {
+          title: "Les chanteurs",
+          description: [
+            "1 chanteur R&B / Soul / Funk",
+            "1 chanteuse variétés internationale",
+          ],
+        },
+      },
+      {
+        en: {
+          title: "Musicians",
+          description: ["1 percussionnist", "1 saxophonist", "1 drummer"],
+        },
+        fr: {
+          title: "Les musiciens",
+          description: ["1 percussionniste", "1 saxophoniste ", "1 batteur "],
+        },
+      },
+      {
+        en: {
+          title: "Decorations",
+          description: ["1 LED wall", " 2 dancers"],
+        },
+        fr: {
+          title: "Le Decor",
+          description: ["1 mur de LED", "2 danceuses"],
+        },
+      },
+    ],
+  },
+  {
+    name: {
+      en: "Orchestra Formule",
+      fr: "Formule Orchestre",
+    },
+    imgSrc: "assets/concepts/5.jpg",
+    info: [
+      {
+        en: {
+          title: "The essentials",
+          description: ["Stephane + 1 Dj"],
+        },
+        fr: {
+          title: "L’essentiel",
+          description: ["Stephane + 1 Dj"],
+        },
+      },
+      {
+        en: {
+          title: "The Technical Part",
+          description: [
+            "1 sound engineer",
+            "1 lights engineer",
+            "2 sound technician",
+          ],
+        },
+        fr: {
+          title: "La technique",
+          description: [
+            "1 ingénieur du son",
+            "1 ingénieur des lumières",
+            "2 technicien du son",
+          ],
+        },
+      },
+      {
+        en: {
+          title: "Singers",
+          description: [
+            "1 R&B / Soul / Funk singer",
+            "1 pop rock singer",
+            "1 international variety singer",
+          ],
+        },
+        fr: {
+          title: "Les chanteurs",
+          description: [
+            "1 chanteur R&B / Soul / Funk",
+            "1 chanteur pop rock",
+            "1 chanteuse variétés internationale",
+          ],
+        },
+      },
+      {
+        en: {
+          title: "Musicians",
+          description: [
+            "1 percussionnist (Stephane)",
+            "1 saxophonist",
+            "1 guitarist",
+            "1 drummer",
+            "1 pianist",
+            "1 bassist",
+          ],
+        },
+        fr: {
+          title: "Les musiciens",
+          description: [
+            "1 percussionniste (Stephane) ",
+            "1 saxophoniste ",
+            "1 guitariste ",
+            "1 batteur ",
+            "1 clavier",
+            "1 bassiste",
+          ],
+        },
+      },
+      {
+        en: {
+          title: "Decorations",
+          description: ["1 LED wall"],
+        },
+        fr: {
+          title: "Le Decor",
+          description: ["1 mur de LED"],
+        },
+      },
+    ],
+  },
+  {
+    name: {
+      en: "Orchestra + Formule",
+      fr: "Formule Orchestre +",
+    },
+    imgSrc: "assets/concepts/6.jpg",
+    info: [
+      {
+        en: {
+          title: "The essentials",
+          description: ["Stephane + 1 Dj"],
+        },
+        fr: {
+          title: "L’essentiel",
+          description: ["Stephane + 1 Dj"],
+        },
+      },
+      {
+        en: {
+          title: "The Technical Part",
+          description: [
+            "1 sound engineer",
+            "1 lights engineer",
+            "2 sound technicians",
+          ],
+        },
+        fr: {
+          title: "La technique",
+          description: [
+            "1 ingénieur du son",
+            "1 ingénieur des lumières",
+            "2 techniciens du son",
+          ],
+        },
+      },
+      {
+        en: {
+          title: "Singers",
+          description: [
+            "1 R&B / Soul / Funk singer",
+            "1 pop rock singer",
+            "2 international variety singers",
+          ],
+        },
+        fr: {
+          title: "Les chanteurs",
+          description: [
+            "1 chanteur R&B / Soul / Funk",
+            "1 chanteur pop rock",
+            "2 chanteuses variétés internationale",
+          ],
+        },
+      },
+      {
+        en: {
+          title: "Musicians",
+          description: [
+            "1 percussionnist",
+            "1 saxophonist",
+            "1 guitarist",
+            "1 drummer",
+            "1 pianist",
+            "1 bassist",
+            "1 violonist",
+          ],
+        },
+        fr: {
+          title: "Les musiciens",
+          description: [
+            "1 percussionniste (Stephane) ",
+            "1 saxophoniste ",
+            "1 guitariste ",
+            "1 batteur ",
+            "1 clavier",
+            "1 bassiste",
+            "1 violonist",
+          ],
+        },
+      },
+      {
+        en: {
+          title: "Decorations",
+          description: ["1 LED wall"],
+        },
+        fr: {
+          title: "Le Decor",
+          description: ["1 mur de LED"],
+        },
+      },
+    ],
+  },
+];

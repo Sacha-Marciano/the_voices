@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 
 // TODO:
 // FILL MISSING TEXT DESCRIPTIONS
-// COMPLETE THE ONCLICK OF EACH OPTION
+// RESOLVE TEXT OVERFLOW SOME WAY
 
 import { options } from "@/config";
 import { LangContext } from "@/contexts/LangContext";
@@ -18,8 +18,9 @@ const OptionsPage = () => {
       {options.map((item, index) => {
         return (
           <div
+            key={index}
             className="text-center bg-white p-4 rounded-lg
-          h-[70vh]"
+          h-[80vh] text-ellipsis"
             onClick={async () => {
               setOptionToShow(index);
               setOpenOption(true);
@@ -45,25 +46,43 @@ const OptionsPage = () => {
         // TODO : find out how to make only the outside of the img setOpen to false and not the entire div
       >
         <button
-          className="text-white font-bold text-4xl absolute top-5 right-12"
+          className="text-white font-bold text-4xl absolute top-2 right-12"
           onClick={() => setOpenOption(false)}
         >
           X
         </button>
         <button
-          className="text-white font-bold text-4xl mr-5"
-          onClick={() => setOptionToShow(optionToShow - 1)}
+          className="text-white font-bold text-4xl mx-5"
+          onClick={() => {
+            options[optionToShow - 1]
+              ? setOptionToShow(optionToShow - 1)
+              : setOptionToShow(options.length - 1);
+          }}
         >
           {`<`}
         </button>
-        <img
-          src={options[optionToShow].image}
-          alt="Selected picture"
-          className="w-[80%] h-[90%] "
-        />
+        <div className="flex flex-col md:flex-row md:h-[80vh] p-4 bg-background">
+          <img
+            src={options[optionToShow].image}
+            alt="Selected picture"
+            className="md:w-[60%] object-cover "
+          />
+          <div className="p-4 text-center w-full">
+            <h1 className="text-primary font-bold text-3xl">
+              {options[optionToShow][lang].name}
+            </h1>
+            <p className="text-white mt-5">
+              {options[optionToShow][lang].description}
+            </p>
+          </div>
+        </div>
         <button
-          className="text-white font-bold text-4xl ml-5"
-          onClick={() => setOptionToShow(optionToShow + 1)}
+          className="text-white font-bold text-4xl mx-5"
+          onClick={() => {
+            options[optionToShow + 1]
+              ? setOptionToShow(optionToShow + 1)
+              : setOptionToShow(0);
+          }}
         >
           {`>`}
         </button>
