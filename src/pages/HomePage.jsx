@@ -30,16 +30,16 @@ const HomePage = () => {
           className="absolute inset-0 w-full h-full object-contain opacity-10"
           alt="Logo Background"
         />
-        <h1 className=" text-4xl text-primary font-bold ">{text.title}</h1>
-        <p>{text.p1}</p>
-        <p>{text.p2}</p>
-        <p>{text.p3}</p>
-        <p>{text.p4}</p>
+        <h1 className=" text-4xl text-primary font-extrabold ">{text.title}</h1>
+        <p className="font-bold">{text.p1}</p>
+        <p className="font-bold">{text.p2}</p>
+        <p className="font-bold">{text.p3}</p>
+        <p className="font-bold">{text.p4}</p>
       </div>
-      {/* Members */}
+      {/* Artists */}
       <div className=" bg-white p-4 w-full text-center pb-10">
         <h2 className="font-bold text-3xl mb-6 text-primary">
-          {lang === "en" ? "Our Members" : "Nos Artistes"}
+          {lang === "en" ? "Our Artists" : "Nos Artistes"}
         </h2>
         <div className="flex gap-4 justify-around">
           {singersDescriptions.map((item, index) => {
@@ -58,20 +58,22 @@ const HomePage = () => {
       <div className="bg-background h-[500px] flex w-full p-4">
         <div className="h-full flex-[1_1_33.33%] flex flex-col items-center justify-center gap-10 text-white border-r-2">
           <h2 className="text-6xl font-bold">Formules</h2>
-          <Link to={"/options"} className="border-2 p-2 text-3xl">
+          <p className="border-2 p-2 text-3xl">
             {lang === "en" ? "Our Formules" : "Nos Formules"}
-          </Link>
+          </p>
         </div>
-        <div className="text-white h-full flex-[2_1_66.67%] flex items-center overflow-x-scroll whitespace-nowrap no-scrollbar">
+        <div className="text-white h-full flex-[2_1_66.67%] flex items-center overflow-x-auto overflow-y-hidden whitespace-nowrap no-scrollbar">
           {concepts.map((item, index) => {
             return (
-              <Concept
-                key={index}
-                isCard={true}
-                name={item.name}
-                imgSrc={item.imgSrc}
-                info={item.info}
-              />
+              <Link to={`/concept/${index}`}>
+                <Concept
+                  key={index}
+                  isCard={true}
+                  name={item.name}
+                  imgSrc={item.imgSrc}
+                  info={item.info}
+                />
+              </Link>
             );
           })}
         </div>

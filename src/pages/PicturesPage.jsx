@@ -97,7 +97,11 @@ const PicturesPage = () => {
         </button>
         <button
           className="text-white font-bold text-4xl mr-5"
-          onClick={() => setImgToShow(imgToShow - 1)}
+          onClick={() => {
+            pics[imgToShow - 1]
+              ? setImgToShow(imgToShow - 1)
+              : setImgToShow(pics.length - 1);
+          }}
         >
           {`<`}
         </button>
@@ -108,7 +112,9 @@ const PicturesPage = () => {
         />
         <button
           className="text-white font-bold text-4xl ml-5"
-          onClick={() => setImgToShow(imgToShow + 1)}
+          onClick={() => {
+            pics[imgToShow + 1] ? setImgToShow(imgToShow + 1) : setImgToShow(0);
+          }}
         >
           {`>`}
         </button>

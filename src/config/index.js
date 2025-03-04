@@ -13,13 +13,13 @@ export const navLinks = [
     },
     path: "/voices",
   },
-  {
-    name: {
-      en: "CONCEPT",
-      fr: "FORMULES",
-    },
-    path: "/concept",
-  },
+  // {
+  //   name: {
+  //     en: "CONCEPT",
+  //     fr: "FORMULES",
+  //   },
+  //   path: "/concept",
+  // },
   {
     name: {
       en: "OPTIONS",

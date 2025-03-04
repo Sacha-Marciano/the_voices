@@ -25,7 +25,7 @@ function App() {
       <Routes>
         <Route path="" element={<HomePage />} />
         <Route path="/voices" element={<VoicesPage />} />
-        <Route path="/concept" element={<ConceptPage />} />
+        <Route path="/concept/:id" element={<ConceptPage />} />
         <Route path="/pictures" element={<PicturesPage />} />
         <Route path="/options" element={<OptionsPage />} />
         <Route path="/videos" element={<VideosPage />} />
