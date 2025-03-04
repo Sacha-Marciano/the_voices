@@ -1,7 +1,6 @@
 import { LangContext } from "@/contexts/LangContext";
 import React, { useContext } from "react";
-
-// Find out whats going on fffff
+import { Link } from "react-router-dom";
 
 const Concept = ({ isCard, name, imgSrc, info }) => {
   const { lang } = useContext(LangContext);
@@ -21,17 +20,21 @@ const Concept = ({ isCard, name, imgSrc, info }) => {
       </div>
     );
   } else {
-    console.log(imgSrc);
-
     return (
-      <div className="flex">
-        <img src={"../" + imgSrc} alt="Concept photo" className="w-[50%]" />
-        <div>
-          <h1 className="border-b-4 border-b-primary">{name[lang]}</h1>
+      <div className="flex text-white p-4">
+        <img
+          src={"../" + imgSrc}
+          alt="Concept photo"
+          className="w-[60%] object-cover"
+        />
+        <div className="w-full p-4">
+          <h1 className="border-b-4 border-b-primary font-extrabold text-4xl p-4">
+            {name[lang]}
+          </h1>
           {info.map((item, index) => {
             return (
-              <div key={index} className="">
-                <h2>{item[lang].title}</h2>
+              <div key={index} className="p-2">
+                <h2 className=" text-primary font-bold">{item[lang].title}</h2>
                 {item[lang].description.map((item, index) => {
                   return <p key={index}>{item}</p>;
                 })}

@@ -13,13 +13,13 @@ export const navLinks = [
     },
     path: "/voices",
   },
-  // {
-  //   name: {
-  //     en: "CONCEPT",
-  //     fr: "FORMULES",
-  //   },
-  //   path: "/concept",
-  // },
+  {
+    name: {
+      en: "CONCEPT",
+      fr: "FORMULES",
+    },
+    path: "/concept/0",
+  },
   {
     name: {
       en: "OPTIONS",
@@ -435,7 +435,11 @@ export const concepts = [
       {
         en: {
           title: "3 options",
-          description: [""],
+          description: [
+            "2 international dancers or",
+            "1 Musician (Saxophonist, Pianist, Violonist) or",
+            "1 singer",
+          ],
         },
         fr: {
           title: "3 options au choix",
