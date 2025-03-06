@@ -42,8 +42,7 @@ const OptionsPage = () => {
         className={`h-full w-full fixed inset-0 bg-black ${
           openOption ? "flex justify-center items-center" : "hidden"
         }`}
-        // onClick={() => setOpenImg(false)}
-        // TODO : find out how to make only the outside of the img setOpen to false and not the entire div
+        onClick={() => setOpenOption(false)}
       >
         <button
           className="text-white font-bold text-4xl absolute top-2 right-12"
@@ -53,7 +52,8 @@ const OptionsPage = () => {
         </button>
         <button
           className="text-white font-bold text-4xl mx-5"
-          onClick={() => {
+          onClick={(evt) => {
+            evt.stopPropagation();
             options[optionToShow - 1]
               ? setOptionToShow(optionToShow - 1)
               : setOptionToShow(options.length - 1);
@@ -61,7 +61,7 @@ const OptionsPage = () => {
         >
           {`<`}
         </button>
-        <div className="flex flex-col md:flex-row md:h-[80vh] p-4 bg-background">
+        <div className="flex flex-col w-full md:flex-row md:h-[80vh] p-4 bg-background">
           <img
             src={options[optionToShow].image}
             alt="Selected picture"
@@ -78,7 +78,8 @@ const OptionsPage = () => {
         </div>
         <button
           className="text-white font-bold text-4xl mx-5"
-          onClick={() => {
+          onClick={(evt) => {
+            evt.stopPropagation();
             options[optionToShow + 1]
               ? setOptionToShow(optionToShow + 1)
               : setOptionToShow(0);

@@ -1,7 +1,6 @@
 import React, { useContext, useState } from "react";
 
 // TODO
-// MAKE SURE THE SITE DONT CRASH WHEN CLICKING MINUS ON THE FIRST IMAGE
 
 import img1 from "../assets/1.jpg";
 import img2 from "../assets/2.jpg";
@@ -28,6 +27,7 @@ import img22 from "../assets/22.jpg";
 import img23 from "../assets/23.jpg";
 import img24 from "../assets/24.jpg";
 import img26 from "../assets/26.jpg";
+
 import { LangContext } from "@/contexts/LangContext";
 
 const pics = [
@@ -86,8 +86,7 @@ const PicturesPage = () => {
         className={`h-full w-full fixed inset-0 bg-black ${
           openImg ? "flex justify-center items-center" : "hidden"
         }`}
-        // onClick={() => setOpenImg(false)}
-        // TODO : find out how to make only the outside of the img setOpen to false and not the entire div
+        onClick={() => setOpenImg(false)}
       >
         <button
           className="text-white font-bold text-4xl absolute top-5 right-12"
@@ -97,7 +96,8 @@ const PicturesPage = () => {
         </button>
         <button
           className="text-white font-bold text-4xl mr-5"
-          onClick={() => {
+          onClick={(evt) => {
+            evt.stopPropagation();
             pics[imgToShow - 1]
               ? setImgToShow(imgToShow - 1)
               : setImgToShow(pics.length - 1);
@@ -112,7 +112,8 @@ const PicturesPage = () => {
         />
         <button
           className="text-white font-bold text-4xl ml-5"
-          onClick={() => {
+          onClick={(evt) => {
+            evt.stopPropagation();
             pics[imgToShow + 1] ? setImgToShow(imgToShow + 1) : setImgToShow(0);
           }}
         >
