@@ -1,6 +1,5 @@
 import { LangContext } from "@/contexts/LangContext";
 import React, { useContext } from "react";
-import { Link } from "react-router-dom";
 
 const Concept = ({ isCard, name, imgSrc, info }) => {
   const { lang } = useContext(LangContext);

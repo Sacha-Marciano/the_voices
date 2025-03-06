@@ -1,7 +1,12 @@
 import React, { useContext, useEffect, useState } from "react";
 import ReactPlayer from "react-player";
 
-import { concepts, homeDescription, singersDescriptions } from "../config";
+import {
+  concepts,
+  homeDescription,
+  options,
+  singersDescriptions,
+} from "../config";
 import { LangContext } from "@/contexts/LangContext";
 
 import SingerCard from "@/components/SingerCard";
@@ -95,11 +100,38 @@ const HomePage = () => {
       {/* Photos */}
       <PhotoGrid />
       {/* Options */}
-      <div className="bg-background w-full p-4">
-        <h2 className="text-6xl text-center font-bold text-white mb-6">
-          Options
-        </h2>
+      <h2 className="pt-6 text-6xl text-center font-bold text-white mb-6">
+        Options
+      </h2>
+      <Link
+        to={"/options"}
+        className="text-white mb-4 border-2 border-white p-4 text-2xl"
+      >
+        {lang === "en" ? "Learn More" : "Details"}
+      </Link>
+      <div className="flex gap-6 flex-1 items-center bg-background p-4 pb-8 w-full  overflow-x-auto overflow-y-hidden whitespace-nowrap no-scrollbar">
+        {options.map((item, index) => {
+          return (
+            <div
+              key={index}
+              className="h-[400px] w-[500px] rounded-full relative"
+            >
+              <img
+                src={item.image}
+                className="h-full w-full object-cover rounded-full "
+              />
+              <div className=" absolute top-0 bottom-0 left-0 right-0 flex items-center justify-center">
+                <h2 className="bg-primary text-white text-2xl font-bold p-4 rounded-full ">
+                  {item[lang].name}
+                </h2>
+              </div>
+              {/* why do i need this for defining width */}
+              <h1 className="w-[500px] bg-primary"></h1>
+            </div>
+          );
+        })}
       </div>
+      {/* Scrolling Images */}
       <ScrollingImages />
     </div>
   );

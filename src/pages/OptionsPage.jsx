@@ -20,7 +20,7 @@ const OptionsPage = () => {
           <div
             key={index}
             className="text-center bg-white p-4 rounded-lg
-          h-[80vh] text-ellipsis"
+          h-[80vh] text-ellipsis cursor-pointer"
             onClick={async () => {
               setOptionToShow(index);
               setOpenOption(true);
