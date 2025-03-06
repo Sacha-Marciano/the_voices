@@ -42,7 +42,7 @@ const HomePage = () => {
         <p className="font-bold">{text.p4}</p>
       </div>
       {/* Artists */}
-      <div className=" bg-white p-4 w-full text-center pb-10">
+      <div className=" bg-white p-4 w-full text-center pb-10 h-[60vh] ">
         <h2 className="font-bold text-3xl mb-6 text-primary">
           {lang === "en" ? "Our Artists" : "Nos Artistes"}
         </h2>
@@ -60,10 +60,10 @@ const HomePage = () => {
         </div>
       </div>
       {/* Concepts */}
-      <div className="bg-background h-[500px] flex w-full p-4">
-        <div className="h-full flex-[1_1_33.33%] flex flex-col items-center justify-center gap-10 text-white border-r-2">
-          <h2 className="text-6xl font-bold">Formules</h2>
-          <p className="border-2 p-2 text-3xl">
+      <div className="bg-background md:h-[500px] md:flex w-full p-4">
+        <div className="h-full flex-[1_1_33.33%] flex flex-col items-center justify-center gap-10 text-white md:border-r-2 border-b-2 md:border-b-0">
+          <h2 className="md:text-6xl font-bold">Formules</h2>
+          <p className="border-2 p-2 md:text-3xl mb-4 md:mb-0">
             {lang === "en" ? "Our Formules" : "Nos Formules"}
           </p>
         </div>
@@ -91,8 +91,8 @@ const HomePage = () => {
           width={"70%"}
         />
         <div className="bg-primary w-[30%] flex flex-col gap-6 justify-center items-center text-white">
-          <h2 className="text-6xl font-bold">Videos</h2>
-          <Link to={"/videos"} className="border-2 p-2 text-3xl">
+          <h2 className="md:text-6xl font-bold">Videos</h2>
+          <Link to={"/videos"} className="border-2 p-2 md:text-3xl">
             Videos
           </Link>
         </div>
@@ -114,14 +114,14 @@ const HomePage = () => {
           return (
             <div
               key={index}
-              className="h-[400px] w-[500px] rounded-full relative"
+              className="h-[400px] w-[250px] md:w-[500px] rounded-full relative"
             >
               <img
                 src={item.image}
                 className="h-full w-full object-cover rounded-full "
               />
               <div className=" absolute top-0 bottom-0 left-0 right-0 flex items-center justify-center">
-                <h2 className="bg-primary text-white text-2xl font-bold p-4 rounded-full ">
+                <h2 className="bg-primary text-white md:text-2xl font-bold p-4 rounded-full ">
                   {item[lang].name}
                 </h2>
               </div>

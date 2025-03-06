@@ -72,6 +72,7 @@ const PicturesPage = () => {
       <div className="flex flex-wrap justify-center gap-3">
         {pics.map((img, index) => (
           <img
+            key={index}
             src={img}
             alt="Image from picture gallery"
             className="max-w-[300px] cursor-pointer"

@@ -33,13 +33,13 @@ const PhotoGrid = () => {
   return (
     <div className="w-full relative flex items-center justify-center">
       <div className="bg-[rgba(255,255,255,0.3)] absolute top-0 bottom-0 left-0 right-0 p-6 flex flex-col items-center justify-center gap-6 text-primary">
-        <h2 className="text-9xl font-bold">
+        <h2 className="text-5xl md:text-8xl font-bold">
           {" "}
           {lang === "en" ? "Galery" : "Galerie"}{" "}
         </h2>
         <Link
           to={"/pictures"}
-          className="border-4 border-primary p-2 text-3xl font-bold rounded-md bg-white"
+          className="border-2 md:border-4 border-primary p-1 md:p-2 text-xl md:text-3xl font-bold rounded-md bg-white"
         >
           {lang === "en" ? "Pictures" : "Photos"}
         </Link>
