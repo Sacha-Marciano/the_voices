@@ -870,3 +870,24 @@ export const concepts = [
     ],
   },
 ];
+
+export const form = {
+  en: {
+    name: "Full name *",
+    email: "Email address *",
+    phone: "Phone number *",
+    note: "Add a message",
+    submit: "Send",
+    title: "Contact Us",
+    description: "blablabla",
+  },
+  fr: {
+    name: "Nom complet *",
+    email: "Adresse Email *",
+    phone: "Numero de telephone *",
+    note: "Ajouter un message",
+    submit: "Envoyer",
+    title: "Contactez-nous",
+    description: "blobloblo",
+  },
+};
