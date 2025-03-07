@@ -6,13 +6,17 @@ const VoicesPage = () => {
   const { lang } = useContext(LangContext);
   const text = theVoicesDescription[lang];
   return (
-    <div>
-      <div>
-        <img />
-        <h1>The Voices</h1>
+    <div className="bg-white">
+      <div className="relative ">
+        <img src="assets/singers/tous.png" className="w-full object-cover" />
+        <div className="flex items-center justify-center absolute inset-0">
+          <h1 className=" font-extrabold text-4xl bg-primary p-2 rounded-md text-white">
+            The Voices
+          </h1>
+        </div>
       </div>
-      <div>
-        <h2>{text.title}</h2>
+      <div className="text-center space-y-4 mb-6 font-semibold">
+        <h2 className="font-bold text-2xl">{text.title}</h2>
         <p>{text.p1}</p>
         <p>{text.p2}</p>
         <p>{text.p3}</p>
@@ -24,7 +28,7 @@ const VoicesPage = () => {
       <div className="grid grid-cols-2">
         {singersDescriptions.map((item, index) => {
           return (
-            <div key={index} className="flex">
+            <div key={index} className="flex gap-3">
               <img src={item.imageSrc} className="w-[50%] object-cover" />
               <div>
                 <h3> {item.name} </h3>
