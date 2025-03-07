@@ -68,6 +68,29 @@ export const homeDescription = {
   },
 };
 
+export const theVoicesDescription = {
+  en: {
+    title: "Who Are We ?",
+    p1: "It's been 12 years since The Voices made it's first steps in the event making scene, ",
+    p2: "The Voices has become a reference for private events, our concept is innovative, always looking for new artistic talents and staging that will make your event an unique moment.",
+    p3: "The Voices has brought together a group of exceptional artists, as well as highly qualified sound and lighting engineers, they will be at the helm of a latest generation equipment that will sublimate your event.",
+    p4: "They will be in control of high-quality material to sublime your event.",
+    p5: "Our haut de gamme concepts, will be customised by you and adapted to all your needs.",
+    p6: "Like a great fashion designer, we will shape your evening to the last detail, starting with the animation of your cocktail, the sound and lighting of the place, as well as the choice of a varied and trendy repertoire. We have cut a wide range of options that will seduce you.",
+    p7: "It's in this festive and interactive atmosphere that magic will work.",
+  },
+  fr: {
+    title: "Qui Sommes Nous ?",
+    p1: "Présent dans le paysage de l’événementiel depuis 12 années, The Voices est devenu une référence des soirées privées.",
+    p2: "Notre concept est novateur, toujours à la recherche de nouveaux talents artistiques et de mise en scène novatrices qui feront de votre événement un moment unique.",
+    p3: "The Voices a su réunir un collectif d’artistes exceptionnels, ainsi que des ingénieurs son et lumières très qualifiés. Ils seront aux manettes d’un matériel dernière génération qui sublimera votre évènement.",
+    p4: "Ils seront aux manettes d’un matériel dernière génération qui sublimera votre évènement.",
+    p5: "Nous vous proposons des formules haut de gamme élaborées selon vos envies et adaptées à votre budget. Tel un grand couturier , nous allons ,ensemble, façonner votre soirée dans les moindres détails.",
+    p6: "Tout sera mis en œuvre pour vous satisfaire et ce, dès l’animation de votre cocktail en passant par la sonorisation et la mise en lumière des lieux, ainsi que le choix d’un répertoire varié et très tendance. De plus, nous avons sélectionné un large choix d’options qui vous séduiront et qui enchanteront vos invités.",
+    p7: "C’est dans cette ambiance festive et interactive que la magie opérera...",
+  },
+};
+
 export const singersDescriptions = [
   {
     name: "Eric Stamm",
@@ -88,6 +111,51 @@ export const singersDescriptions = [
     name: "Harold",
     role: { en: "Singer", fr: "Chanteur" },
     imageSrc: "assets/singers/harold.jpg",
+  },
+  {
+    name: "Vincent",
+    role: { en: "Artistic director", fr: "Directeur artistique" },
+    imageSrc: "assets/singers/vincent.jpg",
+  },
+  {
+    name: "Jos",
+    role: { en: "Guitarist", fr: "Guitariste" },
+    imageSrc: "assets/singers/JOS.jpg",
+  },
+  {
+    name: "Dimitri",
+    role: { en: "Saxophonist", fr: "Saxophoniste" },
+    imageSrc: "assets/singers/dimitri.jpg",
+  },
+  {
+    name: "Rodriguo",
+    role: { en: "Drummer", fr: "Percussioniste" },
+    imageSrc: "assets/singers/rodriguo.jpg",
+  },
+  {
+    name: "Laurent",
+    role: { en: "Bassist", fr: "Bassiste" },
+    imageSrc: "assets/singers/laurent.jpg",
+  },
+  {
+    name: "Nico",
+    role: { en: "Drummer", fr: "Batteur" },
+    imageSrc: "assets/singers/nico.jpg",
+  },
+  {
+    name: "Eve",
+    role: { en: "Violonist", fr: "Violonist" },
+    imageSrc: "assets/singers/eve.jpg",
+  },
+  {
+    name: "Jerome",
+    role: { en: "DJ", fr: "DJ" },
+    imageSrc: "assets/singers/jerome.jpg",
+  },
+  {
+    name: "Calic",
+    role: { en: "DJ", fr: "DJ" },
+    imageSrc: "assets/singers/calic.jpg",
   },
 ];
 

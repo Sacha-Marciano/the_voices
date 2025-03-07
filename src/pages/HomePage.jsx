@@ -46,17 +46,19 @@ const HomePage = () => {
         <h2 className="font-bold text-3xl mb-6 text-primary">
           {lang === "en" ? "Our Artists" : "Nos Artistes"}
         </h2>
-        <div className="flex gap-4 justify-around">
-          {singersDescriptions.map((item, index) => {
-            return (
-              <SingerCard
-                key={index}
-                name={item.name}
-                imageSrc={item.imageSrc}
-                role={item.role[lang]}
-              />
-            );
-          })}
+        <div className="overflow-x-auto no-scrollbar overflow-y-hidden">
+          <div className="w-[210vw] flex gap-4 justify-around p-6  ">
+            {singersDescriptions.map((item, index) => {
+              return (
+                <SingerCard
+                  key={index}
+                  name={item.name}
+                  imageSrc={item.imageSrc}
+                  role={item.role[lang]}
+                />
+              );
+            })}
+          </div>
         </div>
       </div>
       {/* Concepts */}
