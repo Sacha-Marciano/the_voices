@@ -13,7 +13,7 @@ const Header = () => {
       <Link to={"/"}>
         <img src={"../assets/logo.png"} className="max-w-[200px] mt-4" />
       </Link>
-      <div className="flex gap-5">
+      <div className="flex gap-5 items-center justify-center">
         <Navigation />
         <Globe color="#b0148c" onClick={toggleLang} />
       </div>

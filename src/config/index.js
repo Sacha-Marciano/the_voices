@@ -947,7 +947,8 @@ export const form = {
     note: "Add a message",
     submit: "Send",
     title: "Contact Us",
-    description: "blablabla",
+    description:
+      "Write us for more info !,Phone : +33 6 99 52 45 45,Email : dj.thevoices@gmail.com,Adress : 82 Avenue de la République - 75011 Paris",
   },
   fr: {
     name: "Nom complet *",
@@ -956,6 +957,7 @@ export const form = {
     note: "Ajouter un message",
     submit: "Envoyer",
     title: "Contactez-nous",
-    description: "blobloblo",
+    description:
+      "Écrivez-nous pour avoir plus d’infos !,Telephone : 06 99 52 45 45,Email : dj.thevoices@gmail.com,Adresse : 82 Avenue de la République - 75011 Paris",
   },
 };

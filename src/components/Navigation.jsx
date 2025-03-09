@@ -32,10 +32,10 @@ const Navigation = () => {
           <Link
             key={item.path}
             to={item.path}
-            className={`font-bold text-white hover:text-hover ${
+            className={`font-bold  hover:text-hover ${
               location.pathname === item.path
-                ? "bg-primary bg-clip-text text-transparent"
-                : ""
+                ? " text-primary border-b-2 border-primary"
+                : "text-white border-0"
             }`}
           >
             {item.name[lang]}

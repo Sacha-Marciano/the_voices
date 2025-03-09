@@ -27,9 +27,15 @@ const ContactsPage = () => {
 
   return (
     <div className="flex items-center justify-center p-4 gap-6">
-      <div className="bg-primary w-full self-start text-white p-4">
+      <div className="bg-primary w-full self-start text-white p-4 rounded-lg">
         <h2 className="text-3xl font-extrabold mb-4">{text.title}</h2>
-        <p> {text.description} </p>
+        {text.description.split(",").map((item, index) => {
+          return (
+            <p className="font-bold my-2" key={index}>
+              {item}
+            </p>
+          );
+        })}
       </div>
       <form onSubmit={handleSubmit} className="flex flex-col min-w-[50%]">
         <label
@@ -79,8 +85,8 @@ const ContactsPage = () => {
         >
           {text.note}
         </label>
-        <input
-          className="mb-4 p-2 rounded-lg"
+        <textarea
+          className="mb-4 p-2 rounded-lg h-36"
           name="note"
           id="note"
           type="text"

@@ -7,8 +7,11 @@ const VoicesPage = () => {
   const text = theVoicesDescription[lang];
   return (
     <div className="bg-white">
-      <div className="relative ">
-        <img src="assets/singers/tous.png" className="w-full object-cover" />
+      <div className="relative max-h-[70vh] ">
+        <img
+          src="assets/singers/tous.png"
+          className="w-full object-cover max-h-[70vh] "
+        />
         <div className="flex items-center justify-center absolute inset-0">
           <h1 className=" font-extrabold text-4xl bg-primary p-2 rounded-md text-white">
             The Voices
@@ -25,13 +28,13 @@ const VoicesPage = () => {
         <p>{text.p6}</p>
         <p>{text.p7}</p>
       </div>
-      <div className="grid grid-cols-2">
+      <div className="grid grid-cols-2 gap-4">
         {singersDescriptions.map((item, index) => {
           return (
             <div key={index} className="flex gap-3">
               <img src={item.imageSrc} className="w-[50%] object-cover" />
-              <div>
-                <h3> {item.name} </h3>
+              <div className="p-4 w-full">
+                <h3 className="text-xl"> {item.name} </h3>
                 <p>{item.role[lang]} </p>
               </div>
             </div>
