@@ -129,7 +129,7 @@ export const singersDescriptions = [
   },
   {
     name: "Rodriguo",
-    role: { en: "Drummer", fr: "Percussioniste" },
+    role: { en: "Percussionist", fr: "Percussioniste" },
     imageSrc: "assets/singers/rodriguo.jpg",
   },
   {

@@ -28,17 +28,38 @@ const VoicesPage = () => {
         <p>{text.p6}</p>
         <p>{text.p7}</p>
       </div>
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid lg:grid-cols-2 lg:gap-4">
         {singersDescriptions.map((item, index) => {
-          return (
-            <div key={index} className="flex gap-3">
-              <img src={item.imageSrc} className="w-[50%] object-cover" />
-              <div className="p-4 w-full">
-                <h3 className="text-xl"> {item.name} </h3>
-                <p>{item.role[lang]} </p>
+          if (index % 2 === 0) {
+            return (
+              <div key={index} className="flex gap-3 bg-primary text-white">
+                <img
+                  src={item.imageSrc}
+                  className="lg:order-1 w-[50%] object-cover"
+                />
+                <div className="p-4 w-full lg:order-2">
+                  <h3 className="text-2xl font-semibold"> {item.name} </h3>
+                  <p>{item.role[lang]} </p>
+                </div>
               </div>
-            </div>
-          );
+            );
+          } else {
+            return (
+              <div
+                key={index}
+                className="flex gap-3 lg:bg-primary lg:text-white"
+              >
+                <img
+                  src={item.imageSrc}
+                  className="lg:order-1 order-2 w-[50%] object-cover"
+                />
+                <div className="p-4 w-full order-1 lg:order-2">
+                  <h3 className="text-2xl font-semibold"> {item.name} </h3>
+                  <p>{item.role[lang]} </p>
+                </div>
+              </div>
+            );
+          }
         })}
       </div>
     </div>
