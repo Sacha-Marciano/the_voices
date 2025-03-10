@@ -19,7 +19,6 @@ const PicturesPage = () => {
       </h1>
       <div className="flex flex-wrap justify-center gap-3">
         {pics.map((img, index) => {
-          console.log(img);
           return (
             <img
               key={index}

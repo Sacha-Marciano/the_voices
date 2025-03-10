@@ -6,7 +6,7 @@ const Concept = ({ isCard, name, imgSrc, info }) => {
 
   if (isCard) {
     return (
-      <div className=" h-full relative p-4 hover:scale-105 cursor-pointer transition-all">
+      <div className=" h-full relative p-4 hover:scale-105 cursor-pointer transition-all w-[100vw] md :w-full">
         <h1 className="bg-primary p-1 font-bold rounded-t-md text-center">
           {name[lang]}
         </h1>
@@ -20,11 +20,11 @@ const Concept = ({ isCard, name, imgSrc, info }) => {
     );
   } else {
     return (
-      <div className="flex text-white p-4">
+      <div className="flex flex-col lg:flex-row text-white p-4">
         <img
           src={"../" + imgSrc}
           alt="Concept photo"
-          className="w-[60%] object-cover"
+          className="lg:w-[60%] object-cover"
         />
         <div className="w-full p-4">
           <h1 className="border-b-4 border-b-primary font-extrabold text-4xl p-4">

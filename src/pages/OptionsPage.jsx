@@ -19,8 +19,8 @@ const OptionsPage = () => {
         return (
           <div
             key={index}
-            className="text-center bg-white p-4 rounded-lg
-          h-[80vh] text-ellipsis cursor-pointer"
+            className=" flex flex-col gap-4 items-center justify-center text-center bg-white p-4 rounded-lg
+           text-ellipsis cursor-pointer min-h-[60vh]"
             onClick={async () => {
               setOptionToShow(index);
               setOpenOption(true);
@@ -29,12 +29,14 @@ const OptionsPage = () => {
             <img
               src={item.image}
               alt={item[lang].name}
-              className="object-cover h-[80%] max-h-[70%]"
+              className="object-cover"
             />
-            <h2 className="text-3xl font-bold text-primary">
-              {item[lang].name}{" "}
-            </h2>
-            <p>{item[lang].description}</p>
+            <div className=" ">
+              <h2 className="text-3xl font-bold text-primary">
+                {item[lang].name}{" "}
+              </h2>
+              <p>{item[lang].description}</p>
+            </div>
           </div>
         );
       })}

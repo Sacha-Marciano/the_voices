@@ -95,7 +95,7 @@ const ContactsPage = () => {
         />
         <button
           type="submit"
-          className="bg-primary rounded-lg text-white text-3xl p-2 w-[25%] self-center"
+          className="bg-primary rounded-lg text-white text-3xl p-2 self-center"
         >
           {text.submit}
         </button>
