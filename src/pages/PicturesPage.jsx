@@ -15,7 +15,11 @@ const PicturesPage = () => {
   return (
     <div className="relative">
       <h1 className="text-3xl text-primary text-center font-bold mb-4">
-        {lang === "en" ? "Our Pictures" : "Nos Photos"}
+        {lang === "en"
+          ? "Our Pictures"
+          : lang === "fr"
+          ? "Nos Photos"
+          : "התמונות שלנו"}
       </h1>
       <div className="flex flex-wrap justify-center gap-3">
         {pics.map((img, index) => {

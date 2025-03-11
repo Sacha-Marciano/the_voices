@@ -3,6 +3,7 @@ export const navLinks = [
     name: {
       en: "HOME",
       fr: "ACCEUIL",
+      he: "בית",
     },
     path: "/",
   },
@@ -10,6 +11,7 @@ export const navLinks = [
     name: {
       en: "THE VOICES",
       fr: "THE VOICES",
+      he: "הקולות",
     },
     path: "/voices",
   },
@@ -17,6 +19,7 @@ export const navLinks = [
     name: {
       en: "CONCEPT",
       fr: "FORMULES",
+      he: "ההרכבים",
     },
     path: "/concept/0",
   },
@@ -24,6 +27,7 @@ export const navLinks = [
     name: {
       en: "OPTIONS",
       fr: "OPTIONS",
+      he: "אופציות",
     },
     path: "/options",
   },
@@ -31,6 +35,7 @@ export const navLinks = [
     name: {
       en: "PICTURES",
       fr: "PHOTOS",
+      he: "התמונות",
     },
     path: "/pictures",
   },
@@ -39,6 +44,7 @@ export const navLinks = [
     name: {
       en: "VIDEOS",
       fr: "VIDEOS",
+      he: "הסרטונים",
     },
     path: "/videos",
   },
@@ -46,6 +52,7 @@ export const navLinks = [
     name: {
       en: "CONTACT US",
       fr: "CONTACTEZ-NOUS",
+      he: "צרו קשר",
     },
     path: "/contacts",
   },
@@ -57,14 +64,21 @@ export const homeDescription = {
     p1: "Known and recognized, The Voices remains an innovative and unique concept that has kept true values. To give you complete satisfaction and, whatever your budget or the nature of your event, we offer a wide range of services and options that will make your evening a unique moment to your image.",
     p2: "Stéphane, leader of The Voices, has gathered a collective of artists with varied and complementary know-how to offer you a breathtaking performance !!!",
     p3: "When developing your evening, we work in total harmony with you, but also with the different providers you have chosen. Thus, we will realize your event as you imagined it. Starting from the chosen formula, added options, we will establish together your repertoire and the animation that you wish for your evening.",
-    p4: "One thing is certain: everything will be scrupulously studied for the D-day, you thought of nothing more than to have fun and enjoy this magic moment.",
+    p4: "One thing is certain: everything will be scrupulously studied that for the D-day, you will think of nothing more than to have fun and enjoy this magic moment.",
   },
   fr: {
     title: "The Voices",
     p1: "Connu et reconnu, The Voices reste un concept novateur et unique qui a gardé des vraies valeurs. Afin de vous donner entière satisfaction et, ce quelques soient votre budget ou la nature de votre événement, nous vous proposons un large choix de prestations et d'options qui feront de votre soirée un moment unique à votre image.",
     p2: "Stéphane, à l'initiative de la création de The Voices, a su réunir un collectif d'artistes au savoir faire varié et complémentaire afin de vous offrir une prestation à couper le souffle !!!",
     p3: "Lors de l'élaboration de votre soirée, nous travaillons en totale harmonie avec vous, mais aussi avec les différents prestataires que vous aurez choisis. Ainsi, nous réaliserons votre événement tel que vous l'avez imaginé. Partant de la formule choisie, des options ajoutées, nous établirons ensemble votre répertoire et l'animation que vous souhaitez pour votre soirée.",
-    p4: "Une chose est sûre : tout sera scrupuleusement étudié pour le jour J, vous ne pensiez à rien d'autre qu'à vous amuser et à profiter pleinement à ce moment magique.",
+    p4: "Une chose est sûre : tout sera scrupuleusement étudié pour que le jour J, vous ne pensiez à rien d'autre qu'à vous amuser et à profiter pleinement de ce moment magique.",
+  },
+  he: {
+    title: "The Voices",
+    p1: "מזוהה ומוכר בכל העולם, 'הקולות' הוא קונספט יחיד ומיוחד במינו, אשר שמר על ערכים אמיתיים. על מנת להשביע את רצונכם, לא משנה מה טבע האירוע או תקציבכם, אנחנו מציעים מגוון רחב של אומנים ואופציות שונות שיעשו מהערב הזה, ערב מיוחד בצלמכם",
+    p2: "סטפן, המייסד ובעלים של הקונספט, גיבש בהצלחה לאורך השנים, קהילת אומנים בעלי כשרונות מגוונים ומשלימים זה את זו, שיוכלו להציג בפניכם מופע עוצר נשימה  ",
+    p3: "שטרבזמן תכנון הערב שלכם, נעבוד בהרמוניה מושלמת ביחד איתכם, וגם עם שאר אנשי המקצוע שתביאו לאירוע. כך, נייצר אירוע בדיוק כפי שדמיינתם. החל מבחירת ההרכב, הוספת אופציות ובניית פלייליסט נבנה יחד את הערב שלכם",
+    p4: "משהו אחד בטוח: הכל יהיה מחושב כדי שביום הגדול, תוכלו לחשוב אך ורק על להנות ולזכור את הרגע הקסום הזה",
   },
 };
 
@@ -74,87 +88,98 @@ export const theVoicesDescription = {
     p1: "It's been 12 years since The Voices made it's first steps in the event making scene, ",
     p2: "The Voices has become a reference for private events, our concept is innovative, always looking for new artistic talents and staging that will make your event an unique moment.",
     p3: "The Voices has brought together a group of exceptional artists, as well as highly qualified sound and lighting engineers, they will be at the helm of a latest generation equipment that will sublimate your event.",
-    p4: "They will be in control of high-quality material to sublime your event.",
-    p5: "Our haut de gamme concepts, will be customised by you and adapted to all your needs.",
-    p6: "Like a great fashion designer, we will shape your evening to the last detail, starting with the animation of your cocktail, the sound and lighting of the place, as well as the choice of a varied and trendy repertoire. We have cut a wide range of options that will seduce you.",
-    p7: "It's in this festive and interactive atmosphere that magic will work.",
+    p4: "Our haut de gamme concepts, will be customised by you and adapted to all your needs.",
+    p5: "Like a great fashion designer, we will shape your evening to the last detail, starting with the animation of your cocktail, the sound and lighting of the place, as well as the choice of a varied and trendy repertoire. We have cut a wide range of options that will seduce you.",
+    p6: "It's in this festive and interactive atmosphere that magic will work.",
   },
   fr: {
     title: "Qui Sommes Nous ?",
     p1: "Présent dans le paysage de l’événementiel depuis 12 années, The Voices est devenu une référence des soirées privées.",
     p2: "Notre concept est novateur, toujours à la recherche de nouveaux talents artistiques et de mise en scène novatrices qui feront de votre événement un moment unique.",
-    p3: "The Voices a su réunir un collectif d’artistes exceptionnels, ainsi que des ingénieurs son et lumières très qualifiés. Ils seront aux manettes d’un matériel dernière génération qui sublimera votre évènement.",
-    p4: "Ils seront aux manettes d’un matériel dernière génération qui sublimera votre évènement.",
-    p5: "Nous vous proposons des formules haut de gamme élaborées selon vos envies et adaptées à votre budget. Tel un grand couturier , nous allons ,ensemble, façonner votre soirée dans les moindres détails.",
-    p6: "Tout sera mis en œuvre pour vous satisfaire et ce, dès l’animation de votre cocktail en passant par la sonorisation et la mise en lumière des lieux, ainsi que le choix d’un répertoire varié et très tendance. De plus, nous avons sélectionné un large choix d’options qui vous séduiront et qui enchanteront vos invités.",
-    p7: "C’est dans cette ambiance festive et interactive que la magie opérera...",
+    p3: "The Voices a su réunir un collectif d’artistes exceptionnels, ainsi que des ingénieurs son et lumières très qualifiés.",
+    p4: "Nous vous proposons des formules haut de gamme élaborées selon vos envies et adaptées à votre budget. Tel un grand couturier , nous allons ,ensemble, façonner votre soirée dans les moindres détails.",
+    p5: "Tout sera mis en œuvre pour vous satisfaire et ce, dès l’animation de votre cocktail en passant par la sonorisation et la mise en lumière des lieux, ainsi que le choix d’un répertoire varié et très tendance. De plus, nous avons sélectionné un large choix d’options qui vous séduiront et qui enchanteront vos invités.",
+    p6: "C’est dans cette ambiance festive et interactive que la magie opérera...",
+  },
+  he: {
+    title: "מי אנחנו",
+    p1: "אנו נמצאים בעולם האירטעים וההפקות כבר 12 שנים, הקהילה שלנו הפכה למותג לערבים פרטיים בצרפת ובארה''ב",
+    p2: "הקונספט חדשני, תמיד בחיפוש אחר כשרונות חדשים והצגות מרשימות שיוכלו לעשות את הערב שלכם, רגע מיוחד",
+    p3: "כל קשת מקצועות הבידור נמצא אצלנו, כולל אנשי סאונד ותאורה מקצוענים שישלטו על המכשירים המתקדמים ביותר שיביאו איתם עוד קסם לאירוע שלכם ",
+    p4: "אנחנו מציעים לכם הרכבים של שירותים ברמה הכי גבוהה, לפי רצונכם, ומותאמים לתקציב שלכם. כמו תופר הוט קוטור, נתפור יחד את האירוע המושלם, ונחשוב על כל פרט",
+    p5: "הכל יהיה כדי לרצות אתכם, החל מאנימציה לקוקטייל, סונוריזציית האולם, בניית התאורה וגם בחירת הפלייליסט. בנוסף, אנו מציעים מגוון אופציות שונות כדי שתוכלו להרשים את האורחים שלכם",
+    p6: "זאת האווירה החגיגית וחמה, שבה הקסם יגרום לכם להרגיש בענן",
   },
 };
 
 export const singersDescriptions = [
   {
     name: "Eric Stamm",
-    role: { en: "Singer", fr: "Chanteur" },
+    role: { en: "Singer", fr: "Chanteur", he: "זמר" },
     imageSrc: "assets/singers/eric.jpg",
   },
   {
     name: "Douce",
-    role: { en: "Singer", fr: "Chanteuse" },
+    role: { en: "Singer", fr: "Chanteuse", he: "זמרת" },
     imageSrc: "assets/singers/douce.jpg",
   },
   {
     name: "Sandra",
-    role: { en: "Singer", fr: "Chanteuse" },
+    role: { en: "Singer", fr: "Chanteuse", he: "זמר" },
     imageSrc: "assets/singers/sandra.jpg",
   },
   {
     name: "Harold",
-    role: { en: "Singer", fr: "Chanteur" },
+    role: { en: "Singer", fr: "Chanteur", he: "זמרת" },
     imageSrc: "assets/singers/harold.jpg",
   },
   {
     name: "Vincent",
-    role: { en: "Artistic director", fr: "Directeur artistique" },
+    role: {
+      en: "Artistic director",
+      fr: "Directeur artistique",
+      he: "מנהל אומנות",
+    },
     imageSrc: "assets/singers/vincent.jpg",
   },
   {
     name: "Jos",
-    role: { en: "Guitarist", fr: "Guitariste" },
+    role: { en: "Guitarist", fr: "Guitariste", he: "נגן גיטרה" },
     imageSrc: "assets/singers/JOS.jpg",
   },
   {
     name: "Dimitri",
-    role: { en: "Saxophonist", fr: "Saxophoniste" },
+    role: { en: "Saxophonist", fr: "Saxophoniste", he: "נגן סקסופון" },
     imageSrc: "assets/singers/dimitri.jpg",
   },
   {
     name: "Rodriguo",
-    role: { en: "Percussionist", fr: "Percussioniste" },
+    role: { en: "Percussionist", fr: "Percussioniste", he: "נגן דרבוקה" },
     imageSrc: "assets/singers/rodriguo.jpg",
   },
   {
     name: "Laurent",
-    role: { en: "Bassist", fr: "Bassiste" },
+    role: { en: "Bassist", fr: "Bassiste", he: "נגן בס" },
     imageSrc: "assets/singers/laurent.jpg",
   },
   {
     name: "Nico",
-    role: { en: "Drummer", fr: "Batteur" },
+    role: { en: "Drummer", fr: "Batteur", he: "מתופף" },
     imageSrc: "assets/singers/nico.jpg",
   },
   {
     name: "Eve",
-    role: { en: "Violonist", fr: "Violonist" },
+    role: { en: "Violonist", fr: "Violonist", he: "נגנית כינור" },
     imageSrc: "assets/singers/eve.jpg",
   },
   {
     name: "Jerome",
-    role: { en: "DJ", fr: "DJ" },
+    role: { en: "DJ", fr: "DJ", he: "די ג'יי" },
     imageSrc: "assets/singers/jerome.jpg",
   },
   {
     name: "Calic",
-    role: { en: "DJ", fr: "DJ" },
+    role: { en: "DJ", fr: "DJ", he: "די ג'יי" },
     imageSrc: "assets/singers/calic.jpg",
   },
 ];
@@ -168,9 +193,14 @@ export const options = [
         "Pour The Voices , l’animation de votre évènement débute dès le cocktail. Nous commençons par diffuser des musiques  » lounge » , puis, 30 minutes avant l’entrée de vos invités en salle , le chanteur et le saxophoniste interpréteront des standards…",
     },
     en: {
-      name: "COCKTAILS BAR",
+      name: "COCKTAILS ANIMATION",
       description:
         "For The Voices, the animation of your event starts from the cocktail. We begin by broadcasting “lounge” music and then, 30 minutes before the entry of your guests in the room, the singer and the saxophonist will interpret jazz standards,…",
+    },
+    he: {
+      name: "אנימציה בקוקטייל",
+      description:
+        "בשבילנו, האנימציה מתחילה החל מהכוס הראשונה. אנחנו נתחיל במוזיקת לאונג' וחצי שעה לפני הכניסה לאולם, הזמר ונגן הסקסופון ינגנו עבורכם קלסיקות מעולם הג'אז",
     },
   },
   {
@@ -185,6 +215,11 @@ export const options = [
       description:
         "If you want to put a touch of humor to your event, and at the same time leave a souvenir to each of your guests, allow them to lend themselves to the game of caricature in joy and good humor…",
     },
+    he: {
+      name: "קריקטוריסט",
+      description:
+        "אם תרצו להסיף נגיעת הומור לאירוע, ובו זמנית להביא מזכרת יפה לכל אחד מהאורחים שלכם, תנו להם להצתייר עך ידי קריקטוריסט מקצועי",
+    },
   },
   {
     image: "assets/options/3.jpg",
@@ -197,6 +232,11 @@ export const options = [
       name: "VIOLIN",
       description:
         "Nothing is more magical nor harmonious than to put symphony in musics revisited by the talent of our violin artists.",
+    },
+    he: {
+      name: "נגן כינור",
+      description:
+        "אין משהו יותר קסום או הרמוני מאשר לתת לנגני הכינורות שלנו לנגן קלסיקות המוזיקה המודרנית עם הכלי בן האלפי שנים",
     },
   },
   {
@@ -211,6 +251,11 @@ export const options = [
       description:
         "The dancers will delight you and create a dynamic atmosphere throughout your evening. They will change four times according to the musical themes tackled and will wear clothes in a style as different as original We suggest you to opt,…",
     },
+    he: {
+      name: " שתי רקדניות ",
+      description:
+        "הרקדניות שלנו יידעו איך לייצר אווירה דינמית לאורך כל הערב. הן יחליפו 4 פעמים, וילבשו את הבגדים המתאימים ביותר לטמאות המובחרות",
+    },
   },
   {
     image: "assets/options/5.jpg",
@@ -221,6 +266,10 @@ export const options = [
     en: {
       name: "SURPRISE CURTAIN",
       description: "Well, it's a surprise …",
+    },
+    he: {
+      name: "וילון הפתעה",
+      description: "… שמעו, זאת הפתעה",
     },
   },
   {
@@ -233,7 +282,12 @@ export const options = [
     en: {
       name: "LED ROBOT",
       description:
-        "For an exceptional wedding or bar-mitzvah party or in the middle of your evening, this breathtaking and futuristic attraction for dance floor.",
+        "For an exceptional wedding or bar-mitzvah party or in the middle of your evening, this breathtaking and futuristic attraction will delight the dance floor.",
+    },
+    he: {
+      name: "רובוט לד",
+      description:
+        " לבר מצווה או חתונה מושלמת, האטרקצייה הזאת פשוט תשרוף את הרחבה ותלהיט את הרוקדים",
     },
   },
   {
@@ -248,6 +302,11 @@ export const options = [
       description:
         "After you have ignited your dance floor, your guests will be delighted to receive a refreshing breath of fresh air.",
     },
+    he: {
+      name: "רובה חמצן",
+      description:
+        " לאחר שתלהיטו את הרחבה, האורחים ישמחו מאוד להנות מהזרם המרענן של רובה החמצן שלנו ",
+    },
   },
   {
     image: "assets/options/8.jpg",
@@ -260,6 +319,11 @@ export const options = [
       name: "DANCEFLOOR",
       description:
         "If you're a techno fan, this dance floor will illuminate your dance in a spectacular way.",
+    },
+    he: {
+      name: "רחבת ריקודים",
+      description:
+        "אם אתם אוהבי טכנו, הרחבה הזאת בשבילכם ! היא פשוט תאיר את הריקודים שלכם בצורה מרשימה",
     },
   },
   {
@@ -274,6 +338,11 @@ export const options = [
       description:
         "Placed in the middle of your dance floor, this piano will create a warm atmosphere and your guests will be able to join our artists to interpret known standards if they wish.",
     },
+    he: {
+      name: "פסנטר",
+      description:
+        "ממוקם באמצע הרחבה, הפנסטר ייצר אווירה רומנטית וחמה. אתם וכל האורחים תוכלו לשיר ולרקוד סלאו לצלילי המוזיקה שתבחרו",
+    },
   },
   {
     image: "assets/options/10.jpg",
@@ -286,6 +355,11 @@ export const options = [
       name: "PHOTO BOOTH",
       description:
         "The Voices presents this new animation. It will allow your guests to immortalize unique moments and enjoy great fun",
+    },
+    he: {
+      name: "מכונת צילום",
+      description:
+        "האתרקצייה החדשה שלנו ! האורים שלכם יוכלו להנות ולצחוק מצילומים שישארו להם בזיכרון (ועל המקרר)",
     },
   },
   {
@@ -300,6 +374,11 @@ export const options = [
       description:
         "Our wall of images will appeal to technology enthusiasts while creating a state-of-the-art lighting effect. A VIDEO-JOCKEY WILL MAKE IT WORK. At the controls, its role will be to create a true interactivity with your guests by broadcasting the videos…",
     },
+    he: {
+      name: "קיר מסכים",
+      description:
+        "קיר המסכים שלנו יתפוס את עיני אוהבי הטכנולוגיה, וייצר אפקטי תאורה מתקדמים. איש מקצוע מיועד יתפעל אותו ותוכלו להריץ עליו את התמונות או הסרטים ההאובים עליכם",
+    },
   },
   {
     image: "assets/options/12.jpg",
@@ -312,6 +391,10 @@ export const options = [
       name: "LIGHTING",
       description:
         "Make the room even more beautiful, for a tailor-made atmosphere.",
+    },
+    he: {
+      name: "תאורה",
+      description: "עשו את האולם עוד יותר יפה עם תאורה דימית ומותאמת אישית",
     },
   },
   {
@@ -326,6 +409,11 @@ export const options = [
       description:
         "If you appreciate the magical and mysterious effects, an illusionist will make his entry into your evening.",
     },
+    he: {
+      name: "קוסם",
+      description:
+        "אם אתם אוהבים קסמים ואומנות חושים, קוסם יהיה חלק מהערב שלכם",
+    },
   },
   {
     image: "assets/options/14.jpg",
@@ -338,6 +426,10 @@ export const options = [
       name: "GOODIES",
       description:
         "Let the cotillons the sharp coils and hats put color and madness in the middle of your guests.",
+    },
+    he: {
+      name: "גודיז",
+      description: "תנו לקונפטי, רעשנים וכובעים להוסיף שיגעון לאויירה ולאורחים",
     },
   },
   {
@@ -352,6 +444,10 @@ export const options = [
       description:
         "The Gospel songs will add a solemn charm to your event while energizing the atmosphere.",
     },
+    he: {
+      name: "גוספל",
+      description: " מושלם עבור הרגעים הרציניים, תוך כדי העצמת הרגשות והאווירה",
+    },
   },
   {
     image: "assets/options/16.jpg",
@@ -364,6 +460,11 @@ export const options = [
       name: "FIREWORKS",
       description:
         "For a breathtaking entry, two fireworks will be deployed on both sides of the runway. Guaranteed brilliant effect !!! (Notice that this animation can not be performed in all venues)",
+    },
+    he: {
+      name: "זיקוקים",
+      description:
+        " לכניסה עוצרת נשימה, שני זיקוקים ייפרסו לאורך המסלול, מובטחת כניסה מרשימה ! (לא ניתן להתקין בכל אולם)",
     },
   },
   {
@@ -378,6 +479,11 @@ export const options = [
       description:
         "The talent of this artist will not fail to dazzle your guests and leave them a memory they will keep in memory for a very long time",
     },
+    he: {
+      name: "צבע פנים",
+      description:
+        "הכשרון של האומן הזה ידהים את האורחים וישאיר להם זכרון להרבה זמן ",
+    },
   },
   {
     image: "assets/options/18.jpg",
@@ -390,6 +496,11 @@ export const options = [
       name: "DRIBBLER",
       description:
         "Whether you ‘re a football fan or not, impress all your audience with this extraordinary demonstration of agility and skill that he will perform before your eyes for the pleasure of all.",
+    },
+    he: {
+      name: "פריסטייל",
+      description:
+        " גם אם אתם אוהדים שרופים של כדורגל וגם אם לא, השחקן הזה יידע להרשים אתכם עם הגמישות והתנועות שלו",
     },
   },
   {
@@ -404,6 +515,11 @@ export const options = [
       description:
         "First solo in an exciting choreography, it will captivate each of your guests and then attract them in movements and undulations that she alone has the secret.",
     },
+    he: {
+      name: "רקדהית בטן",
+      description:
+        "בהתחלה לבד בקורגרפיה מרשימה, היא תתפוס את הפוקוס של כל אחד עם תנועות הגוף שרק היא מכירה",
+    },
   },
   {
     image: "assets/options/20.jpg",
@@ -417,18 +533,28 @@ export const options = [
       description:
         "Do not resist the inflamed rhythms of the Brazilian samba thanks to our sublime artists who will train your guests in a festive and warm atmosphere.",
     },
+    he: {
+      name: "רקדניות ברזיל",
+      description:
+        "אל תתנגדו לקצב המסחרר של הסמבה הברזילאית, שהרקדניות שלנו יוסיפו לערב, וימשכו את הקהל לאווירה לטינית חגיגית",
+    },
   },
   {
     image: "assets/options/21.jpg",
     fr: {
       name: "CASQUETTES PERSONALISABLES",
       description:
-        "Faites place à l’originalité grâce à cette animation qui ravira tous les enfants . Cet artiste réalisera sous les yeux émerveilles de chacun d.entre eux une casquette personnalisée . Ils garderont ainsi un souvenir impérissable de votre événement.",
+        "Faites place à l’originalité grâce à cette animation qui ravira tous les enfants . Cet artiste réalisera sous les yeux émerveilles de chacun d'entre eux une casquette personnalisée . Ils garderont ainsi un souvenir impérissable de votre événement.",
     },
     en: {
       name: "CUSTOM CAPS",
       description:
         "Make way for the originality thanks to this animation which will delight all the children. This artist will realize under the eyes of each one of them a personalized cap. They will keep an unforgettable memory of your event.",
+    },
+    he: {
+      name: "כובע בהתאמה",
+      description:
+        "עשו מקום למקוריות ותנו לאומן שלנו לייצר מול העיניים הנדהמות של הילדים את המזכרת היפה והמרגשת הזאת ",
     },
   },
   {
@@ -443,6 +569,11 @@ export const options = [
       description:
         "The breakdancers will create a modern and energetic atmosphere. They will present a breathtaking 20-minute show. Your child will be honored by participating in their extraordinary choreography.",
     },
+    he: {
+      name: "רקדני ברייק",
+      description:
+        " הרקדנים האלה יבצעו ריקוד מודרני ומלא אנרגיה בפני הקהל שלכם במשך 20 דקות, בו הם יצרפו אתכם או את הילד שלכם ",
+    },
   },
   {
     image: "assets/options/23.jpg",
@@ -455,6 +586,11 @@ export const options = [
       name: "ACTIVE BAR",
       description:
         "This animation is proposed under three formulas. Formula 1 : – 2 activists prepare alcoholic cocktails or not and then come to serve your guests on the dance floor. Form 2: – 1 bar near the dance floor or during…",
+    },
+    he: {
+      name: "בר פעיל",
+      description:
+        "האנימציה  הזאת מוצעת ב3 צורות: 1) הברמניות וכינו קוקטיילים (אם או בלי אלכוהול) ויגישו אותם לשולחנות, 2) בר פעיל על רחבת הריקודים וכו",
     },
   },
   {
@@ -469,6 +605,10 @@ export const options = [
       description:
         "Book a gourmet and decorative space at your event by creating a fun and refined candy buffet filled with sweets.",
     },
+    he: {
+      name: "בר ממתקים",
+      description: "הזמינו בופט ממלא ממתקים שיכבשו את הלב של הקטנים והגדלים",
+    },
   },
 ];
 
@@ -477,6 +617,7 @@ export const concepts = [
     name: {
       en: "DJ Formule",
       fr: "Formule DJ",
+      he: "הרכב די ג'יי",
     },
     imgSrc: "assets/concepts/1.jpg",
     info: [
@@ -489,6 +630,10 @@ export const concepts = [
           title: "L’essentiel",
           description: ["Stephane + 1 Dj"],
         },
+        he: {
+          title: "מה שחייב",
+          description: ["סטפן", "די ג'יי"],
+        },
       },
       {
         en: {
@@ -498,6 +643,10 @@ export const concepts = [
         fr: {
           title: "La technique",
           description: ["1 ingénieur du son", "1 ingénieur des lumières"],
+        },
+        he: {
+          title: "החלק הטכני",
+          description: ["מהנדס תאורה", "מהנדס סאונד"],
         },
       },
       {
@@ -517,6 +666,14 @@ export const concepts = [
             "1 chanteur/chanteuse",
           ],
         },
+        he: {
+          title: "3 אופציות",
+          description: [
+            "שתי רקדניות בינלאומיות או",
+            "מוזיקאי (סקסופון, כינור או פסנטר) או",
+            "זמר/זמרת",
+          ],
+        },
       },
     ],
   },
@@ -524,6 +681,7 @@ export const concepts = [
     name: {
       en: "DJ Live Formule",
       fr: "Formule DJ Live",
+      he: "הרכב די ג'יי לייב",
     },
     imgSrc: "assets/concepts/2.jpg",
     info: [
@@ -536,6 +694,10 @@ export const concepts = [
           title: "L’essentiel",
           description: ["Stephane + 1 Dj"],
         },
+        he: {
+          title: "מה שחייב",
+          description: ["סטפן", "די ג'יי"],
+        },
       },
       {
         en: {
@@ -545,6 +707,10 @@ export const concepts = [
         fr: {
           title: "La technique",
           description: ["1 ingénieur du son", "1 ingénieur des lumières"],
+        },
+        he: {
+          title: "החלק הטכני",
+          description: ["מהנדס תאורה", "מהנדס סאונד"],
         },
       },
       {
@@ -562,6 +728,10 @@ export const concepts = [
             "1 chanteuse variétés internationale",
           ],
         },
+        he: {
+          title: "זמרים (2 לבחירה)",
+          description: ["זמר מיינסטרים", "זמרת מיינסטרים"],
+        },
       },
       {
         en: {
@@ -571,6 +741,10 @@ export const concepts = [
         fr: {
           title: "Les musiciens",
           description: ["1 Saxophoniste +", "1 artiste au choix"],
+        },
+        he: {
+          title: "נגנים",
+          description: ["נגן סקסופון", "אומן לבחירה"],
         },
       },
       {
@@ -594,6 +768,16 @@ export const concepts = [
             "2 danseuses",
           ],
         },
+        he: {
+          title: "אומן (1 לבחירה)",
+          description: [
+            "נגו דקבורה או",
+            "נגן גיטרה או",
+            "נגן פסנטר או",
+            "נגן כינור או",
+            "שתי רקדניות",
+          ],
+        },
       },
     ],
   },
@@ -601,6 +785,7 @@ export const concepts = [
     name: {
       en: "DJ Live + Formule",
       fr: "Formule DJ Live +",
+      he: "הרכב די ג'יי לייב פלוס",
     },
     imgSrc: "assets/concepts/3.jpg",
     info: [
@@ -612,6 +797,10 @@ export const concepts = [
         fr: {
           title: "L’essentiel",
           description: ["Stephane + 1 Dj"],
+        },
+        he: {
+          title: "מה שחייב",
+          description: ["סטפן", "די ג'יי"],
         },
       },
       {
@@ -630,6 +819,10 @@ export const concepts = [
             "1 ingénieur des lumières",
             "1 technicien du son",
           ],
+        },
+        he: {
+          title: "החלק הטכני",
+          description: ["מהנדס תאורה", "מהנדס סאונד", "טכנאי סאונד"],
         },
       },
       {
@@ -649,6 +842,14 @@ export const concepts = [
             "1 chanteuse variétés internationale",
           ],
         },
+        he: {
+          title: "זמרים",
+          description: [
+            "זמר מיינסטרים",
+            "זמרת מיינסטרים",
+            "זמר פאנק / סאול / ארנבי",
+          ],
+        },
       },
       {
         en: {
@@ -671,6 +872,16 @@ export const concepts = [
             "1 clavier",
           ],
         },
+        he: {
+          title: "נגנים",
+          description: [
+            "נגן דקבורה (סטפן) ",
+            "נגן סקסופון",
+            "נגן גיטרה ",
+            "מתופף",
+            "נגן פסנטר ",
+          ],
+        },
       },
       {
         en: {
@@ -681,6 +892,10 @@ export const concepts = [
           title: "Le Decor",
           description: ["1 mur de LED"],
         },
+        he: {
+          title: "קישותים",
+          description: ["קיר מסכים"],
+        },
       },
     ],
   },
@@ -688,6 +903,7 @@ export const concepts = [
     name: {
       en: "Ibiza Formule",
       fr: "Formule Ibiza",
+      he: "הרכב איביזה",
     },
     imgSrc: "assets/concepts/4.jpg",
     info: [
@@ -699,6 +915,10 @@ export const concepts = [
         fr: {
           title: "L’essentiel",
           description: ["Stephane + 1 Dj"],
+        },
+        he: {
+          title: "מה שחייב",
+          description: ["סטפן", "די ג'יי"],
         },
       },
       {
@@ -718,6 +938,10 @@ export const concepts = [
             "1 technicien du son",
           ],
         },
+        he: {
+          title: "החלק הטכני",
+          description: ["מהנדס תאורה", "מהנדס סאונד", "טכנאי סאונד"],
+        },
       },
       {
         en: {
@@ -734,6 +958,10 @@ export const concepts = [
             "1 chanteuse variétés internationale",
           ],
         },
+        he: {
+          title: "זמרים",
+          description: ["זמרת מיינסטרים", "זמר פאנק / סאול / ארנבי"],
+        },
       },
       {
         en: {
@@ -743,6 +971,10 @@ export const concepts = [
         fr: {
           title: "Les musiciens",
           description: ["1 percussionniste", "1 saxophoniste ", "1 batteur "],
+        },
+        he: {
+          title: "נגנים",
+          description: ["נגן דקבורה ", "נגן סקסופון", "מתופף"],
         },
       },
       {
@@ -754,6 +986,10 @@ export const concepts = [
           title: "Le Decor",
           description: ["1 mur de LED", "2 danceuses"],
         },
+        he: {
+          title: "קישותים",
+          description: ["קיר מסכים", "שתי רקדניות"],
+        },
       },
     ],
   },
@@ -761,6 +997,7 @@ export const concepts = [
     name: {
       en: "Orchestra Formule",
       fr: "Formule Orchestre",
+      he: "הרכב תזמורת",
     },
     imgSrc: "assets/concepts/5.jpg",
     info: [
@@ -772,6 +1009,10 @@ export const concepts = [
         fr: {
           title: "L’essentiel",
           description: ["Stephane + 1 Dj"],
+        },
+        he: {
+          title: "מה שחייב",
+          description: ["סטפן", "די ג'יי"],
         },
       },
       {
@@ -791,6 +1032,10 @@ export const concepts = [
             "2 technicien du son",
           ],
         },
+        he: {
+          title: "החלק הטכני",
+          description: ["מהנדס תאורה", "מהנדס סאונד", " שתי טכנאי סאונד"],
+        },
       },
       {
         en: {
@@ -807,6 +1052,14 @@ export const concepts = [
             "1 chanteur R&B / Soul / Funk",
             "1 chanteur pop rock",
             "1 chanteuse variétés internationale",
+          ],
+        },
+        he: {
+          title: "זמרים",
+          description: [
+            "זמרת מיינסטרים",
+            "זמר פאנק / סאול / ארנבי",
+            "זמר פופ רוק",
           ],
         },
       },
@@ -833,6 +1086,17 @@ export const concepts = [
             "1 bassiste",
           ],
         },
+        he: {
+          title: "נגנים",
+          description: [
+            "נגן דקבורה (סטפן) ",
+            "נגן סקסופון",
+            "נגן גיטרה ",
+            "מתופף",
+            "נגן פסנטר ",
+            "נגן בס",
+          ],
+        },
       },
       {
         en: {
@@ -843,6 +1107,10 @@ export const concepts = [
           title: "Le Decor",
           description: ["1 mur de LED"],
         },
+        he: {
+          title: "קישותים",
+          description: ["קיר מסכים"],
+        },
       },
     ],
   },
@@ -850,6 +1118,7 @@ export const concepts = [
     name: {
       en: "Orchestra + Formule",
       fr: "Formule Orchestre +",
+      he: "הרכב תזמורת פלוס",
     },
     imgSrc: "assets/concepts/6.jpg",
     info: [
@@ -861,6 +1130,10 @@ export const concepts = [
         fr: {
           title: "L’essentiel",
           description: ["Stephane + 1 Dj"],
+        },
+        he: {
+          title: "מה שחייב",
+          description: ["סטפן", "די ג'יי"],
         },
       },
       {
@@ -880,6 +1153,10 @@ export const concepts = [
             "2 techniciens du son",
           ],
         },
+        he: {
+          title: "החלק הטכני",
+          description: ["מהנדס תאורה", "מהנדס סאונד", " שתי טכנאי סאונד"],
+        },
       },
       {
         en: {
@@ -896,6 +1173,14 @@ export const concepts = [
             "1 chanteur R&B / Soul / Funk",
             "1 chanteur pop rock",
             "2 chanteuses variétés internationale",
+          ],
+        },
+        he: {
+          title: "זמרים",
+          description: [
+            "שני זמרי מיינסטרים",
+            "זמר פאנק / סאול / ארנבי",
+            "זמר פופ רוק",
           ],
         },
       },
@@ -915,13 +1200,25 @@ export const concepts = [
         fr: {
           title: "Les musiciens",
           description: [
-            "1 percussionniste (Stephane) ",
+            "1 percussionniste",
             "1 saxophoniste ",
             "1 guitariste ",
             "1 batteur ",
             "1 clavier",
             "1 bassiste",
             "1 violonist",
+          ],
+        },
+        he: {
+          title: "נגנים",
+          description: [
+            "נגן דקבורה ",
+            "נגן סקסופון",
+            "נגן גיטרה ",
+            "מתופף",
+            "נגן פסנטר ",
+            "נגן בס",
+            "נגן כינור",
           ],
         },
       },
@@ -933,6 +1230,10 @@ export const concepts = [
         fr: {
           title: "Le Decor",
           description: ["1 mur de LED"],
+        },
+        he: {
+          title: "קישותים",
+          description: ["קיר מסכים"],
         },
       },
     ],
@@ -959,5 +1260,15 @@ export const form = {
     title: "Contactez-nous",
     description:
       "Écrivez-nous pour avoir plus d’infos !,Telephone : 06 99 52 45 45,Email : dj.thevoices@gmail.com,Adresse : 82 Avenue de la République - 75011 Paris",
+  },
+  he: {
+    name: "שם מלא *",
+    email: "כתובת מייל *",
+    phone: "טלפון *",
+    note: "הוסף הודעה",
+    submit: "שלח",
+    title: "צרו קשר",
+    description:
+      "כתבו לנו על מנת לקבל יותר מידע, מייל : , dj.thevoices@gmail.com, טלפון : , +33 6 99 52 45 45 , כתובת : , 82 Avenue de la République - 75011 Paris",
   },
 };

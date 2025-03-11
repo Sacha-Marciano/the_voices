@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext } from "react";
 import ReactPlayer from "react-player";
 
 import {
@@ -46,10 +46,13 @@ const HomePage = () => {
       {/* Artists */}
       <div className=" bg-white p-4 w-full text-center pb-10">
         <h2 className="font-bold text-3xl mb-6 text-primary">
-          {lang === "en" ? "Our Artists" : "Nos Artistes"}
+          {lang === "en"
+            ? "Our Artists"
+            : lang === "fr"
+            ? "Nos Artistes"
+            : "האומנים שלנו"}
         </h2>
         <div className="flex gap-4 overflow-x-auto no-scrollbar overflow-y-hidden">
-          {/* <div className="w-full flex gap-4 justify-around p-6  "> */}
           {singersDescriptions.map((item, index) => {
             return (
               <SingerCard
@@ -60,7 +63,6 @@ const HomePage = () => {
               />
             );
           })}
-          {/* </div> */}
         </div>
       </div>
       {/* Concepts */}
@@ -68,7 +70,11 @@ const HomePage = () => {
         <div className="h-full flex-[1_1_33.33%] flex flex-col items-center justify-center gap-4 lg:gap-10 text-white md:border-r-2 border-b-2 md:border-b-0">
           <h2 className="text-3xl lg:text-6xl font-bold">Formules</h2>
           <p className="border-2 p-2 lg:text-3xl mb-4 md:mb-0">
-            {lang === "en" ? "Our Formules" : "Nos Formules"}
+            {lang === "en"
+              ? "Our Formules"
+              : lang === "fr"
+              ? "Nos Formules"
+              : "ההרכבים שלנו"}
           </p>
         </div>
         <div className="text-white h-full flex-[2_1_66.67%] flex items-center overflow-x-auto overflow-y-hidden whitespace-nowrap no-scrollbar">
@@ -111,7 +117,7 @@ const HomePage = () => {
         to={"/options"}
         className="text-white mb-4 border-2 border-white p-4 lg:text-3xl"
       >
-        {lang === "en" ? "Learn More" : "Details"}
+        {lang === "en" ? "Learn More" : lang === "fr" ? "Details" : "פרטים"}
       </Link>
       <div className="flex gap-6 flex-1 items-center bg-background p-4 pb-8 w-full  overflow-x-auto overflow-y-hidden whitespace-nowrap no-scrollbar">
         {options.map((item, index) => {

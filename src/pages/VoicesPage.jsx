@@ -19,14 +19,13 @@ const VoicesPage = () => {
         </div>
       </div>
       <div className="text-center space-y-4 mb-6 font-semibold">
-        <h2 className="font-bold text-2xl">{text.title}</h2>
+        <h2 className="font-bold text-3xl text-primary">{text.title}</h2>
         <p>{text.p1}</p>
         <p>{text.p2}</p>
         <p>{text.p3}</p>
         <p>{text.p4}</p>
         <p>{text.p5}</p>
         <p>{text.p6}</p>
-        <p>{text.p7}</p>
       </div>
       <div className="grid lg:grid-cols-2 lg:gap-4">
         {singersDescriptions.map((item, index) => {

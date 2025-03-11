@@ -2,7 +2,6 @@ import React, { useContext, useState } from "react";
 
 // TODO:
 // FILL MISSING TEXT DESCRIPTIONS
-// RESOLVE TEXT OVERFLOW SOME WAY
 
 import { options } from "@/config";
 import { LangContext } from "@/contexts/LangContext";
