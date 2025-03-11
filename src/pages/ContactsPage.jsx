@@ -1,6 +1,8 @@
 import { LangContext } from "@/contexts/LangContext";
 import React, { useContext, useState } from "react";
 
+import emailjs from "@emailjs/browser";
+
 import { form } from "@/config";
 
 const ContactsPage = () => {
@@ -22,7 +24,29 @@ const ContactsPage = () => {
 
   const handleSubmit = (evt) => {
     evt.preventDefault();
-    console.log(inputs);
+
+    emailjs
+      .send(
+        "service_s9xyt8p", // Replace with your EmailJS Service ID
+        "template_9201vqr", // Replace with your EmailJS Template ID
+        {
+          name: inputs.name,
+          phone: inputs.phone,
+          email: inputs.email,
+          note: inputs.note,
+        },
+        "m1aI-1ke3rMEavsXN" // Replace with your EmailJS Public Key
+      )
+      .then(
+        (response) => {
+          console.log("Email sent successfully!", response);
+          alert("Email sent successfully!");
+        },
+        (error) => {
+          console.error("Error sending email:", error);
+          alert("Failed to send email.");
+        }
+      );
   };
 
   return (
