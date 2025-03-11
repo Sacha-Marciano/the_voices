@@ -19,7 +19,7 @@ const VoicesPage = () => {
         </div>
       </div>
       <div className="text-center space-y-4 mb-6 font-semibold">
-        <h2 className="font-bold text-3xl text-primary">{text.title}</h2>
+        <h2 className="font-bold text-3xl text-primary mt-6">{text.title}</h2>
         <p>{text.p1}</p>
         <p>{text.p2}</p>
         <p>{text.p3}</p>

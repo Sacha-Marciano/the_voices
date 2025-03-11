@@ -35,9 +35,7 @@ const HomePage = () => {
           className="absolute inset-0 w-full h-full object-contain opacity-10"
           alt="Logo Background"
         />
-        <h1 className="text-3xl lg:text-6xl text-primary font-extrabold ">
-          {text.title}
-        </h1>
+        <h1 className="text-6xl text-primary font-black ">{text.title}</h1>
         <p className="font-semibold">{text.p1}</p>
         <p className="font-semibold">{text.p2}</p>
         <p className="font-semibold">{text.p3}</p>
@@ -68,7 +66,9 @@ const HomePage = () => {
       {/* Concepts */}
       <div className="bg-background md:h-[500px] md:flex w-full p-4">
         <div className="h-full flex-[1_1_33.33%] flex flex-col items-center justify-center gap-4 lg:gap-10 text-white md:border-r-2 border-b-2 md:border-b-0">
-          <h2 className="text-3xl lg:text-6xl font-bold">Formules</h2>
+          <h2 className="text-3xl lg:text-6xl font-bold">
+            {lang === "he" ? "הרכבים" : "Formules"}
+          </h2>
           <p className="border-2 p-2 lg:text-3xl mb-4 md:mb-0">
             {lang === "en"
               ? "Our Formules"
@@ -101,9 +101,15 @@ const HomePage = () => {
           width={"70%"}
         />
         <div className="bg-primary w-[30%] flex flex-col gap-6 justify-center items-center text-white">
-          <h2 className="text-3xl lg:text-6xl font-bold">Videos</h2>
-          <Link to={"/videos"} className="border-2 p-2 md:text-3xl">
-            Videos
+          <h2 className="text-3xl lg:text-6xl font-bold">
+            {lang === "he" ? "סרטונים" : "Videos"}
+          </h2>
+          <Link to={"/videos"} className="border-2 p-2 md:text-3xl text-center">
+            {lang === "en"
+              ? "Our Videos"
+              : lang === "fr"
+              ? "Nos Videos"
+              : "הסרטונים שלנו"}
           </Link>
         </div>
       </div>
@@ -111,7 +117,7 @@ const HomePage = () => {
       <PhotoGrid />
       {/* Options */}
       <h2 className="pt-6 text-3xl lg:text-6xl text-center font-bold text-white mb-6">
-        Options
+        {lang === "he" ? "אופצוית" : "Options"}
       </h2>
       <Link
         to={"/options"}

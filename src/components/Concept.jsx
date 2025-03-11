@@ -6,7 +6,7 @@ const Concept = ({ isCard, name, imgSrc, info }) => {
 
   if (isCard) {
     return (
-      <div className=" h-full relative p-4 hover:scale-105 cursor-pointer transition-all w-[100vw] md :w-full">
+      <div className=" h-full relative p-4 hover:scale-105 cursor-pointer transition-all w-[100vw] md:w-full">
         <h1 className="bg-primary p-1 font-bold rounded-t-md text-center">
           {name[lang]}
         </h1>
