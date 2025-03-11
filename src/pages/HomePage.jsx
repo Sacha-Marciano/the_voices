@@ -98,7 +98,7 @@ const HomePage = () => {
         <ReactPlayer
           url={"https://youtu.be/aXtZP_-frJ4"}
           height={500}
-          width={"70%"}
+          width={"100%"}
         />
         <div className="bg-primary w-[30%] flex flex-col gap-6 justify-center items-center text-white">
           <h2 className="text-3xl lg:text-6xl font-bold">
