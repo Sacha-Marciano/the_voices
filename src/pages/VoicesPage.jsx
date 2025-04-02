@@ -9,14 +9,9 @@ const VoicesPage = () => {
     <div className="bg-white">
       <div className="relative max-h-[70vh] ">
         <img
-          src="assets/singers/tous.png"
+          src="assets/pics/2.jpg"
           className="w-full object-cover max-h-[70vh] "
         />
-        <div className="flex items-center justify-center absolute inset-0">
-          <h1 className=" font-extrabold text-4xl bg-primary p-2 rounded-md text-white">
-            The Voices
-          </h1>
-        </div>
       </div>
       <div className="text-center space-y-4 mb-6 font-semibold">
         <h2 className="font-bold text-3xl text-primary mt-6">{text.title}</h2>

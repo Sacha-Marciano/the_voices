@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 
 import FacebookIcon from "@mui/icons-material/Facebook";
 import YouTubeIcon from "@mui/icons-material/YouTube";
+import InstagramIcon from "@mui/icons-material/Instagram";
 import { LangContext } from "@/contexts/LangContext";
 
 const Footer = () => {
@@ -34,6 +35,14 @@ const Footer = () => {
         </div>
         <div>
           <div className="flex gap-4 mr-4 justify-end">
+            <Link
+              to={
+                "https://www.instagram.com/stephthevoices?igsh=Z3l1Y21tcnN1eDY1&utm_source=qr "
+              }
+              target="_blank"
+            >
+              <InstagramIcon sx={{ color: "white" }} />
+            </Link>
             <Link to={"https://www.facebook.com/dj.thevoices"} target="_blank">
               <FacebookIcon sx={{ color: "white" }} />
             </Link>

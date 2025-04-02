@@ -28,7 +28,7 @@ const OptionsPage = () => {
             <img
               src={item.image}
               alt={item[lang].name}
-              className="object-cover"
+              className="object-contain flex-1"
             />
             <div className=" ">
               <h2 className="text-3xl font-bold text-primary">

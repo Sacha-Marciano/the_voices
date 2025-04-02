@@ -27,15 +27,15 @@ const ContactsPage = () => {
 
     emailjs
       .send(
-        "service_s9xyt8p", // Replace with your EmailJS Service ID
-        "template_9201vqr", // Replace with your EmailJS Template ID
+        "service_ms4l9sa", // Replace with your EmailJS Service ID
+        "template_2ebk09g", // Replace with your EmailJS Template ID
         {
           name: inputs.name,
           phone: inputs.phone,
           email: inputs.email,
           note: inputs.note,
         },
-        "m1aI-1ke3rMEavsXN" // Replace with your EmailJS Public Key
+        "eEuNjxjft9bZeDvRz" // Replace with your EmailJS Public Key
       )
       .then(
         (response) => {

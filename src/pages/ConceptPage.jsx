@@ -9,14 +9,14 @@ const ConceptPage = () => {
   const concept = concepts[params.id];
 
   return (
-    <>
+    <div className="relative">
       <Concept
         isCard={false}
         name={concept.name}
         imgSrc={concept.imgSrc}
         info={concept.info}
       />
-      <div className="flex mt-4 w-full justify-around">
+      <div className="absolute right-10 bottom-10 space-x-5">
         <Link
           to={
             concepts[params.id - 1]
@@ -38,7 +38,7 @@ const ConceptPage = () => {
           {">"}
         </Link>
       </div>
-    </>
+    </div>
   );
 };
 

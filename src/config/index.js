@@ -1249,7 +1249,7 @@ export const form = {
     submit: "Send",
     title: "Contact Us",
     description:
-      "Write us for more info !,Phone : +33 6 99 52 45 45,Email : dj.thevoices@gmail.com,Adress : 82 Avenue de la République - 75011 Paris",
+      "Write us for more info !,Phone : +33 6 99 52 45 45,Email : dj.thevoices@gmail.com,Adress : 242 Boulevard Voltaire - 75011 Paris",
   },
   fr: {
     name: "Nom complet *",
